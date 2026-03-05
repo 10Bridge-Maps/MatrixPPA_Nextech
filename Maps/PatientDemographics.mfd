@@ -169,30 +169,11 @@
 					</targets>
 					<view ltx="793" lty="130" rbx="891" rby="200"/>
 				</component>
-				<component name="constant" library="core" uid="19" kind="2">
-					<targets>
-						<datapoint pos="0" key="35"/>
-					</targets>
-					<view ltx="505" lty="183" rbx="602" rby="200"/>
-					<data>
-						<constant value="RowCount" datatype="string"/>
-					</data>
-				</component>
 				<component name="now" library="lang" uid="20" kind="5">
 					<targets>
 						<datapoint pos="0" key="1"/>
 					</targets>
 					<view ltx="596" lty="-155" rbx="646" rby="-117"/>
-				</component>
-				<component name="first-items" library="core" uid="21" kind="5">
-					<sources>
-						<datapoint pos="0" key="89"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="47"/>
-					</targets>
-					<view ltx="487" lty="221" rbx="602" rby="275"/>
 				</component>
 				<component name="constant" library="core" uid="22" kind="2">
 					<targets>
@@ -281,16 +262,6 @@
 					<data>
 						<constant value="Continue" datatype="string"/>
 					</data>
-				</component>
-				<component name="count" library="core" uid="32" kind="5">
-					<sources>
-						<datapoint/>
-						<datapoint pos="1" key="50"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="28"/>
-					</targets>
-					<view ltx="477" lty="118" rbx="602" rby="172"/>
 				</component>
 				<component name="PatientDemographics" library="json" uid="33" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
@@ -472,11 +443,88 @@
 					</targets>
 					<view ltx="366" lty="294" rbx="478" rby="348"/>
 				</component>
+				<component name="constant" library="core" uid="19" kind="2">
+					<targets>
+						<datapoint pos="0" key="35"/>
+					</targets>
+					<view ltx="631" lty="147" rbx="728" rby="164"/>
+					<data>
+						<constant value="RowCount" datatype="string"/>
+					</data>
+				</component>
+				<component name="count" library="core" uid="32" kind="5">
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="50"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="28"/>
+					</targets>
+					<view ltx="622" lty="75" rbx="747" rby="129"/>
+				</component>
+				<component name="if-else" library="core" uid="41" kind="4">
+					<sources>
+						<datapoint pos="0" key="97"/>
+						<datapoint pos="1" key="98"/>
+						<datapoint pos="2" key="100"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="103"/>
+					</targets>
+					<view ltx="498" lty="309" rbx="602" rby="382"/>
+				</component>
+				<component name="patientRole" library="core" uid="45" kind="3">
+					<sources>
+						<datapoint pos="0" key="115"/>
+						<datapoint pos="1" key="116"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="117"/>
+						<datapoint/>
+					</targets>
+					<view ltx="459" lty="126" rbx="572" rby="180"/>
+				</component>
+				<component name="exists" library="core" uid="48" kind="5">
+					<sources>
+						<datapoint pos="0" key="106"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="107"/>
+					</targets>
+					<view ltx="231" lty="107" rbx="307" rby="145"/>
+				</component>
+				<component name="exists" library="core" uid="52" kind="5">
+					<sources>
+						<datapoint pos="0" key="111"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="112"/>
+					</targets>
+					<view ltx="231" lty="144" rbx="307" rby="182"/>
+				</component>
+				<component name="exists" library="core" uid="51" kind="5">
+					<sources>
+						<datapoint pos="0" key="109"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="110"/>
+					</targets>
+					<view ltx="231" lty="185" rbx="307" rby="223"/>
+				</component>
+				<component name="exists" library="core" uid="53" kind="5">
+					<sources>
+						<datapoint pos="0" key="113"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="114"/>
+					</targets>
+					<view ltx="231" lty="222" rbx="307" rby="260"/>
+				</component>
 				<component name="CDA" library="xml" uid="37" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
-					<view ltx="-16" lty="221" rbx="268" rby="780"/>
+					<view ltx="-16" lty="294" rbx="268" rby="853"/>
 					<data>
-						<root scrollposition="2208">
+						<root scrollposition="1719">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -644,19 +692,40 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML" outputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml"/>
 					</data>
 				</component>
-				<component name="if-else" library="core" uid="41" kind="4">
+				<component name="first-items" library="core" uid="21" kind="5">
 					<sources>
-						<datapoint pos="0" key="97"/>
-						<datapoint pos="1" key="98"/>
-						<datapoint pos="2" key="100"/>
+						<datapoint pos="0" key="89"/>
+						<datapoint/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="103"/>
+						<datapoint pos="0" key="47"/>
 					</targets>
-					<view ltx="498" lty="309" rbx="602" rby="382"/>
+					<view ltx="487" lty="221" rbx="602" rby="275"/>
+				</component>
+				<component name="logical-and" library="core" uid="50" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="108"/>
+						<datapoint pos="1" key="118"/>
+						<datapoint pos="2" key="119"/>
+						<datapoint pos="3" key="120"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="121"/>
+					</targets>
+					<view ltx="342" lty="118" rbx="434" rby="208"/>
+				</component>
+				<component name="first-items" library="core" uid="43" kind="5">
+					<sources>
+						<datapoint pos="0" key="104"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="105"/>
+					</targets>
+					<view ltx="305" lty="440" rbx="420" rby="494"/>
 				</component>
 				<component name="AAO_NextGen_PatientDemographic" library="json" uid="36" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
@@ -815,6 +884,7 @@
 					<vertex vertexkey="41">
 						<edges>
 							<edge vertexkey="42"/>
+							<edge vertexkey="109"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="43">
@@ -831,9 +901,10 @@
 						<edges>
 							<edge vertexkey="48"/>
 							<edge vertexkey="68"/>
+							<edge vertexkey="113"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="49">
+					<vertex vertexkey="117">
 						<edges>
 							<edge vertexkey="50"/>
 							<edge vertexkey="55"/>
@@ -857,11 +928,13 @@
 					<vertex vertexkey="103">
 						<edges>
 							<edge vertexkey="59"/>
+							<edge vertexkey="106"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="60">
+					<vertex vertexkey="105">
 						<edges>
 							<edge vertexkey="61"/>
+							<edge vertexkey="111"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="62">
@@ -947,6 +1020,41 @@
 						<edges>
 							<edge vertexkey="100"/>
 							<edge vertexkey="102"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="104"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="107">
+						<edges>
+							<edge vertexkey="108"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="115"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="121">
+						<edges>
+							<edge vertexkey="116"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="112">
+						<edges>
+							<edge vertexkey="118"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="110">
+						<edges>
+							<edge vertexkey="119"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="114">
+						<edges>
+							<edge vertexkey="120"/>
 						</edges>
 					</vertex>
 				</vertices>

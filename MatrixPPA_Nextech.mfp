@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  MapForce Project File  -->
-<Project Expanded="Yes" Type="Root" language="xslt" OutputDir="GeneratedCode" Title="MatrixPPA_Nextech" OutputName="MatrixPPA_Nextech" Version="6">
+<Project Expanded="Yes" language="xslt" OutputDir="GeneratedCode" Title="MatrixPPA_Nextech" OutputName="MatrixPPA_Nextech" Version="6">
 	<Folder FolderName="Mapping Folder" Expanded="Yes" Type="MappingFolder">
 		<File Type="Mapping" FilePath="Maps\AllergyIntolerance.mfd"/>
 		<File Type="Mapping" FilePath="Maps\AllergyIntoleranceReaction.mfd"/>

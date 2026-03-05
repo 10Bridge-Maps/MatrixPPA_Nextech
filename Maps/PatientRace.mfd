@@ -131,15 +131,6 @@
 						<constant value="SiteID" datatype="string"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="15" kind="2">
-					<targets>
-						<datapoint pos="0" key="58"/>
-					</targets>
-					<view ltx="1143" lty="86" rbx="1271" rby="103"/>
-					<data>
-						<constant value="messagegroupid" datatype="string"/>
-					</data>
-				</component>
 				<component name="equal" library="core" uid="16" kind="5">
 					<sources>
 						<datapoint pos="0" key="14"/>
@@ -423,17 +414,6 @@
 					</targets>
 					<view ltx="1170" lty="683" rbx="1274" rby="756"/>
 				</component>
-				<component name="if-else" library="core" uid="39" kind="4">
-					<sources>
-						<datapoint pos="0" key="78"/>
-						<datapoint pos="1" key="94"/>
-						<datapoint pos="2" key="99"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="37"/>
-					</targets>
-					<view ltx="533" lty="298" rbx="637" rby="371"/>
-				</component>
 				<component name="not-exists" library="core" uid="40" kind="5">
 					<sources>
 						<datapoint pos="0" key="88"/>
@@ -489,16 +469,6 @@
 						<json schema="..\..\..\10Bridge\Schemas\Meta.schema.json" inputinstance="..\..\Schemas\Meta2.json" outputinstance="..\..\Schemas\Meta2.json"/>
 					</data>
 				</component>
-				<component name="count" library="core" uid="35" kind="5">
-					<sources>
-						<datapoint/>
-						<datapoint pos="1" key="68"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="18"/>
-					</targets>
-					<view ltx="791" lty="210" rbx="916" rby="264"/>
-				</component>
 				<component name="first-items" library="core" uid="22" kind="5">
 					<sources>
 						<datapoint pos="0" key="67"/>
@@ -507,7 +477,57 @@
 					<targets>
 						<datapoint pos="0" key="39"/>
 					</targets>
-					<view ltx="431" lty="210" rbx="546" rby="264"/>
+					<view ltx="428" lty="232" rbx="543" rby="286"/>
+				</component>
+				<component name="exists" library="core" uid="50" kind="5">
+					<sources>
+						<datapoint pos="0" key="109"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="108"/>
+					</targets>
+					<view ltx="428" lty="129" rbx="504" rby="167"/>
+				</component>
+				<component name="exists" library="core" uid="49" kind="5">
+					<sources>
+						<datapoint pos="0" key="107"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="106"/>
+					</targets>
+					<view ltx="428" lty="166" rbx="504" rby="204"/>
+				</component>
+				<component name="if-else" library="core" uid="43" kind="4">
+					<sources>
+						<datapoint pos="0" key="82"/>
+						<datapoint pos="1" key="105"/>
+						<datapoint pos="2" key="80"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="46"/>
+					</targets>
+					<view ltx="533" lty="432" rbx="637" rby="505"/>
+				</component>
+				<component name="if-else" library="core" uid="39" kind="4">
+					<sources>
+						<datapoint pos="0" key="78"/>
+						<datapoint pos="1" key="94"/>
+						<datapoint pos="2" key="99"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="37"/>
+					</targets>
+					<view ltx="533" lty="298" rbx="637" rby="371"/>
+				</component>
+				<component name="logical-and" library="core" uid="48" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="110"/>
+						<datapoint pos="1" key="111"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="112"/>
+					</targets>
+					<view ltx="552" lty="155" rbx="637" rby="211"/>
 				</component>
 				<component name="CDA" library="xml" uid="44" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
@@ -684,19 +704,29 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML" outputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml"/>
 					</data>
 				</component>
-				<component name="if-else" library="core" uid="43" kind="4">
+				<component name="count" library="core" uid="35" kind="5">
 					<sources>
-						<datapoint pos="0" key="82"/>
-						<datapoint pos="1" key="105"/>
-						<datapoint pos="2" key="80"/>
+						<datapoint/>
+						<datapoint pos="1" key="68"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="46"/>
+						<datapoint pos="0" key="18"/>
 					</targets>
-					<view ltx="533" lty="432" rbx="637" rby="505"/>
+					<view ltx="791" lty="210" rbx="916" rby="264"/>
+				</component>
+				<component name="patientRole" library="core" uid="46" kind="3">
+					<sources>
+						<datapoint pos="0" key="113"/>
+						<datapoint pos="1" key="114"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="115"/>
+						<datapoint/>
+					</targets>
+					<view ltx="664" lty="157" rbx="777" rby="211"/>
 				</component>
 				<component name="AAO_NextGen_PatientRace" library="json" uid="42" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
@@ -747,6 +777,15 @@
 						</root>
 						<parameter usageKind="stringserialize"/>
 						<json schema="..\..\Schemas\PatientRace.schema.json" inputinstance="..\Data\ENTAndAllergyAssociates_PatientRace.json" outputinstance="..\Data\ENTAndAllergyAssociates_PatientRace.json"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<targets>
+						<datapoint pos="0" key="58"/>
+					</targets>
+					<view ltx="1146" lty="86" rbx="1274" rby="103"/>
+					<data>
+						<constant value="messagegroupid" datatype="string"/>
 					</data>
 				</component>
 			</children>
@@ -838,6 +877,7 @@
 					<vertex vertexkey="37">
 						<edges>
 							<edge vertexkey="38"/>
+							<edge vertexkey="107"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="39">
@@ -858,6 +898,7 @@
 					<vertex vertexkey="46">
 						<edges>
 							<edge vertexkey="47"/>
+							<edge vertexkey="109"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="48">
@@ -876,7 +917,7 @@
 							<edge vertexkey="53"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="54">
+					<vertex vertexkey="115">
 						<edges>
 							<edge vertexkey="55"/>
 							<edge vertexkey="68"/>
@@ -994,6 +1035,26 @@
 					<vertex vertexkey="104">
 						<edges>
 							<edge vertexkey="105"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="108">
+						<edges>
+							<edge vertexkey="110"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="106">
+						<edges>
+							<edge vertexkey="111"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="54">
+						<edges>
+							<edge vertexkey="113"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="112">
+						<edges>
+							<edge vertexkey="114"/>
 						</edges>
 					</vertex>
 				</vertices>

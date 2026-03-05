@@ -385,26 +385,6 @@
 					</targets>
 					<view ltx="982" lty="711" rbx="1086" rby="784"/>
 				</component>
-				<component name="constant" library="core" uid="32" kind="2">
-					<targets>
-						<datapoint pos="0" key="30"/>
-					</targets>
-					<view ltx="223" lty="128" rbx="379" rby="145"/>
-					<data>
-						<constant value="2.16.840.1.113883.10.20.22.4.7" datatype="string"/>
-					</data>
-				</component>
-				<component name="observation" library="core" uid="33" kind="3">
-					<sources>
-						<datapoint pos="0" key="27"/>
-						<datapoint pos="1" key="29"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="82"/>
-						<datapoint/>
-					</targets>
-					<view ltx="504" lty="194" rbx="617" rby="248"/>
-				</component>
 				<component name="equal" library="core" uid="34" kind="5">
 					<sources>
 						<datapoint pos="0" key="19"/>
@@ -518,68 +498,6 @@
 					</targets>
 					<view ltx="512" lty="660" rbx="588" rby="698"/>
 				</component>
-				<component name="item-at" library="core" uid="46" kind="5">
-					<sources>
-						<datapoint pos="0" key="41"/>
-						<datapoint pos="1" key="70"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="84"/>
-					</targets>
-					<view ltx="519" lty="430" rbx="629" rby="484"/>
-				</component>
-				<component name="equal" library="core" uid="49" kind="5">
-					<sources>
-						<datapoint pos="0" key="31"/>
-						<datapoint pos="1" key="67"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="48"/>
-					</targets>
-					<view ltx="405" lty="100" rbx="461" rby="154"/>
-				</component>
-				<component name="if-else" library="core" uid="45" kind="4">
-					<sources>
-						<datapoint pos="0" key="148"/>
-						<datapoint pos="1" key="139"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="40"/>
-					</targets>
-					<view ltx="614" lty="655" rbx="718" rby="728"/>
-				</component>
-				<component name="logical-and" library="core" uid="44" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="49"/>
-						<datapoint pos="1" key="35"/>
-						<datapoint pos="2" key="131"/>
-						<datapoint pos="3" key="157"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="28"/>
-					</targets>
-					<view ltx="490" lty="116" rbx="582" rby="206"/>
-				</component>
-				<component name="constant" library="core" uid="48" kind="2">
-					<targets>
-						<datapoint pos="0" key="46"/>
-					</targets>
-					<view ltx="223" lty="172" rbx="379" rby="189"/>
-					<data>
-						<constant value="2.16.840.1.113883.10.20.22.4.9" datatype="string"/>
-					</data>
-				</component>
-				<component name="equal" library="core" uid="52" kind="5">
-					<sources>
-						<datapoint pos="0" key="47"/>
-						<datapoint pos="1" key="33"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="34"/>
-					</targets>
-					<view ltx="405" lty="172" rbx="461" rby="226"/>
-				</component>
 				<component name="value-map" library="core" uid="43" kind="23">
 					<sources>
 						<datapoint pos="0" key="60"/>
@@ -626,14 +544,75 @@
 					</targets>
 					<view ltx="661" lty="514" rbx="750" rby="568"/>
 				</component>
-				<component name="distinct-values" library="core" uid="47" kind="5">
+				<component name="exists" library="core" uid="63" kind="5">
 					<sources>
-						<datapoint pos="0" key="85"/>
+						<datapoint pos="0" key="186"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="50"/>
+						<datapoint pos="0" key="187"/>
 					</targets>
-					<view ltx="649" lty="402" rbx="750" rby="440"/>
+					<view ltx="405" lty="540" rbx="481" rby="578"/>
+				</component>
+				<component name="if-else" library="core" uid="64" kind="4">
+					<sources>
+						<datapoint pos="0" key="188"/>
+						<datapoint pos="1" key="185"/>
+						<datapoint pos="2" key="189"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="184"/>
+					</targets>
+					<view ltx="521" lty="530" rbx="625" rby="603"/>
+				</component>
+				<component name="constant" library="core" uid="32" kind="2">
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="223" lty="128" rbx="379" rby="145"/>
+					<data>
+						<constant value="2.16.840.1.113883.10.20.22.4.7" datatype="string"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="49" kind="5">
+					<sources>
+						<datapoint pos="0" key="31"/>
+						<datapoint pos="1" key="67"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="48"/>
+					</targets>
+					<view ltx="405" lty="100" rbx="461" rby="154"/>
+				</component>
+				<component name="equal" library="core" uid="52" kind="5">
+					<sources>
+						<datapoint pos="0" key="47"/>
+						<datapoint pos="1" key="33"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="34"/>
+					</targets>
+					<view ltx="405" lty="172" rbx="461" rby="226"/>
+				</component>
+				<component name="constant" library="core" uid="48" kind="2">
+					<targets>
+						<datapoint pos="0" key="46"/>
+					</targets>
+					<view ltx="223" lty="172" rbx="379" rby="189"/>
+					<data>
+						<constant value="2.16.840.1.113883.10.20.22.4.9" datatype="string"/>
+					</data>
+				</component>
+				<component name="logical-and" library="core" uid="44" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="49"/>
+						<datapoint pos="1" key="35"/>
+						<datapoint pos="2" key="131"/>
+						<datapoint pos="3" key="157"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="28"/>
+					</targets>
+					<view ltx="490" lty="116" rbx="582" rby="206"/>
 				</component>
 				<component name="exists" library="core" uid="54" kind="5">
 					<sources>
@@ -644,11 +623,20 @@
 					</targets>
 					<view ltx="440" lty="319" rbx="516" rby="357"/>
 				</component>
+				<component name="distinct-values" library="core" uid="47" kind="5">
+					<sources>
+						<datapoint pos="0" key="85"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="50"/>
+					</targets>
+					<view ltx="649" lty="402" rbx="750" rby="440"/>
+				</component>
 				<component name="CDA" library="xml" uid="58" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="85" lty="217" rbx="369" rby="776"/>
 					<data>
-						<root scrollposition="8386">
+						<root scrollposition="7645">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -709,9 +697,7 @@
 																		<entry name="templateId" ns="1" expanded="1">
 																			<entry name="root" type="attribute" outkey="66"/>
 																		</entry>
-																		<entry name="id" ns="1" expanded="1">
-																			<entry name="root" type="attribute" outkey="119"/>
-																		</entry>
+																		<entry name="id" ns="1" expanded="1"/>
 																		<entry name="text" ns="1">
 																			<entry name="reference" ns="1" expanded="1"/>
 																		</entry>
@@ -752,7 +738,7 @@
 																					<entry name="root" type="attribute" outkey="32"/>
 																				</entry>
 																				<entry name="id" ns="1" expanded="1">
-																					<entry name="root" type="attribute" outkey="158"/>
+																					<entry name="extension" type="attribute" outkey="193"/>
 																				</entry>
 																				<entry name="code" ns="1" expanded="1"/>
 																				<entry name="value" ns="1" expanded="1" displayselectionmode="all"/>
@@ -810,28 +796,59 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML" outputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\403 - DiGiovanni, Linda_2026-03-04 20_05_34_000.xml" outputinstance="..\Data\403 - DiGiovanni, Linda_2026-03-04 20_05_34_000.xml"/>
 					</data>
 				</component>
-				<component name="exists" library="core" uid="63" kind="5">
+				<component name="if-else" library="core" uid="45" kind="4">
 					<sources>
-						<datapoint pos="0" key="186"/>
+						<datapoint pos="0" key="148"/>
+						<datapoint pos="1" key="139"/>
+						<datapoint/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="187"/>
+						<datapoint pos="0" key="40"/>
 					</targets>
-					<view ltx="405" lty="540" rbx="481" rby="578"/>
+					<view ltx="614" lty="655" rbx="718" rby="728"/>
 				</component>
-				<component name="if-else" library="core" uid="64" kind="4">
+				<component name="item-at" library="core" uid="46" kind="5">
 					<sources>
-						<datapoint pos="0" key="188"/>
-						<datapoint pos="1" key="185"/>
-						<datapoint pos="2" key="189"/>
+						<datapoint pos="0" key="41"/>
+						<datapoint pos="1" key="70"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="184"/>
+						<datapoint pos="0" key="84"/>
 					</targets>
-					<view ltx="521" lty="530" rbx="625" rby="603"/>
+					<view ltx="519" lty="430" rbx="629" rby="484"/>
+				</component>
+				<component name="exception" library="core" uid="65" kind="18">
+					<sources>
+						<datapoint pos="0" key="190"/>
+						<datapoint pos="1" key="192"/>
+					</sources>
+					<view ltx="1396" lty="105" rbx="1474" rby="159"/>
+					<data>
+						<exception name="error"/>
+					</data>
+				</component>
+				<component name="observation" library="core" uid="33" kind="3">
+					<sources>
+						<datapoint pos="0" key="27"/>
+						<datapoint pos="1" key="29"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="82"/>
+						<datapoint/>
+					</targets>
+					<view ltx="504" lty="194" rbx="617" rby="248"/>
+				</component>
+				<component name="constant" library="core" uid="66" kind="2">
+					<targets>
+						<datapoint pos="0" key="191"/>
+					</targets>
+					<view ltx="1203" lty="99" rbx="1357" rby="116"/>
+					<data>
+						<constant value="Data found for AllergyIntoleranceReaction - fix map" datatype="string"/>
+					</data>
 				</component>
 				<component name="AAO_NextGen_AllergyIntoleranceReaction" library="json" uid="59" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
@@ -1027,9 +1044,11 @@
 							<edge vertexkey="71"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="158">
+					<vertex vertexkey="193">
 						<edges>
 							<edge vertexkey="53"/>
+							<edge vertexkey="120"/>
+							<edge vertexkey="139"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="54">
@@ -1100,6 +1119,7 @@
 						<edges>
 							<edge vertexkey="83"/>
 							<edge vertexkey="95"/>
+							<edge vertexkey="190"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="84">
@@ -1162,12 +1182,6 @@
 					<vertex vertexkey="111">
 						<edges>
 							<edge vertexkey="112"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="119">
-						<edges>
-							<edge vertexkey="120"/>
-							<edge vertexkey="139"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="124">
@@ -1244,6 +1258,11 @@
 					<vertex vertexkey="187">
 						<edges>
 							<edge vertexkey="188"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="191">
+						<edges>
+							<edge vertexkey="192"/>
 						</edges>
 					</vertex>
 				</vertices>

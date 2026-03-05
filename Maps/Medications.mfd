@@ -627,24 +627,6 @@
 						<json schema="..\..\Schemas\encounterID.schema.json"/>
 					</data>
 				</component>
-				<component name="exists" library="core" uid="56" kind="5">
-					<sources>
-						<datapoint pos="0" key="162"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="144"/>
-					</targets>
-					<view ltx="351" lty="-28" rbx="427" rby="10"/>
-				</component>
-				<component name="exists" library="core" uid="55" kind="5">
-					<sources>
-						<datapoint pos="0" key="139"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="160"/>
-					</targets>
-					<view ltx="351" lty="14" rbx="427" rby="52"/>
-				</component>
 				<component name="equal" library="core" uid="51" kind="5">
 					<sources>
 						<datapoint pos="0" key="99"/>
@@ -763,17 +745,6 @@
 					</targets>
 					<view ltx="708" lty="300" rbx="785" rby="338"/>
 				</component>
-				<component name="encounterID" library="core" uid="38" kind="3">
-					<sources>
-						<datapoint pos="0" key="129"/>
-						<datapoint pos="1" key="105"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="110"/>
-						<datapoint/>
-					</targets>
-					<view ltx="804" lty="185" rbx="917" rby="239"/>
-				</component>
 				<component name="value-map" library="core" uid="26" kind="23">
 					<sources>
 						<datapoint pos="0" key="69"/>
@@ -801,6 +772,33 @@
 						</valuemap>
 					</data>
 				</component>
+				<component name="constant" library="core" uid="50" kind="2">
+					<targets>
+						<datapoint pos="0" key="146"/>
+					</targets>
+					<view ltx="869" lty="582" rbx="917" rby="599"/>
+					<data>
+						<constant value="0" datatype="string"/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="56" kind="5">
+					<sources>
+						<datapoint pos="0" key="162"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="144"/>
+					</targets>
+					<view ltx="351" lty="-28" rbx="427" rby="10"/>
+				</component>
+				<component name="exists" library="core" uid="55" kind="5">
+					<sources>
+						<datapoint pos="0" key="139"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="160"/>
+					</targets>
+					<view ltx="351" lty="14" rbx="427" rby="52"/>
+				</component>
 				<component name="if-else" library="core" uid="59" kind="4">
 					<sources>
 						<datapoint pos="0" key="156"/>
@@ -812,20 +810,22 @@
 					</targets>
 					<view ltx="814" lty="300" rbx="918" rby="373"/>
 				</component>
-				<component name="constant" library="core" uid="50" kind="2">
+				<component name="encounterID" library="core" uid="38" kind="3">
+					<sources>
+						<datapoint pos="0" key="129"/>
+						<datapoint pos="1" key="105"/>
+					</sources>
 					<targets>
-						<datapoint pos="0" key="146"/>
+						<datapoint pos="0" key="110"/>
+						<datapoint/>
 					</targets>
-					<view ltx="869" lty="582" rbx="917" rby="599"/>
-					<data>
-						<constant value="0" datatype="string"/>
-					</data>
+					<view ltx="804" lty="185" rbx="917" rby="239"/>
 				</component>
 				<component name="CDA" library="xml" uid="57" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="189" lty="65" rbx="473" rby="624"/>
 					<data>
-						<root scrollposition="4942">
+						<root scrollposition="4715">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -834,8 +834,8 @@
 								</namespaces>
 							</header>
 							<entry name="FileInstance" ns="2" expanded="1">
-								<file role="inputinstance" name="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
-								<file role="outputinstance" name="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
+								<file role="inputinstance" name="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml"/>
+								<file role="outputinstance" name="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml"/>
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="ClinicalDocument" ns="1" expanded="1">
 										<entry name="recordTarget" ns="1" expanded="1">
@@ -960,7 +960,7 @@
 																	<entry name="root" type="attribute" outkey="72"/>
 																</entry>
 																<entry name="id" ns="1" expanded="1">
-																	<entry name="root" type="attribute" outkey="33"/>
+																	<entry name="extension" type="attribute" outkey="186"/>
 																</entry>
 																<entry name="statusCode" ns="1" expanded="1">
 																	<entry name="code" type="attribute" outkey="62"/>
@@ -1123,7 +1123,7 @@
 			<edge from="27" to="28"/>
 			<edge from="29" to="30"/>
 			<edge from="31" to="32"/>
-			<edge from="33" to="34"/>
+			<edge from="186" to="34"/>
 			<edge from="35" to="36"/>
 			<edge from="37" to="38"/>
 			<edge from="39" to="40"/>
@@ -1193,7 +1193,7 @@
 			<edge from="42" to="157"/>
 			<edge from="158" to="159"/>
 			<edge from="160" to="161"/>
-			<edge from="33" to="162"/>
+			<edge from="186" to="162"/>
 			<edge from="163" to="164"/>
 			<edge from="152" to="165"/>
 			<edge from="35" to="166"/>

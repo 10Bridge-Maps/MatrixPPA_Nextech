@@ -144,26 +144,6 @@
 						<constant value="RowCount" datatype="string"/>
 					</data>
 				</component>
-				<component name="count" library="core" uid="17" kind="5">
-					<sources>
-						<datapoint/>
-						<datapoint pos="1" key="74"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="144"/>
-					</targets>
-					<view ltx="934" lty="-118" rbx="1059" rby="-64"/>
-				</component>
-				<component name="count" library="core" uid="18" kind="5">
-					<sources>
-						<datapoint/>
-						<datapoint pos="1" key="168"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="169"/>
-					</targets>
-					<view ltx="934" lty="-21" rbx="1059" rby="33"/>
-				</component>
 				<component name="Meta" library="json" uid="19" kind="31">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="521" lty="-299" rbx="701" rby="-169"/>
@@ -395,16 +375,6 @@
 					<data>
 						<constant value="0" datatype="string"/>
 					</data>
-				</component>
-				<component name="add" library="core" uid="54" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="145"/>
-						<datapoint pos="1" key="170"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="41"/>
-					</targets>
-					<view ltx="1123" lty="-10" rbx="1205" rby="46"/>
 				</component>
 				<component name="constant" library="core" uid="55" kind="2">
 					<targets>
@@ -656,82 +626,6 @@
 					</targets>
 					<view ltx="940" lty="215" rbx="996" rby="269"/>
 				</component>
-				<component name="json" library="json" uid="68" kind="31">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="757" lty="130" rbx="907" rby="330"/>
-					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace uid="http://www.altova.com/mapforce"/>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="compute-when">
-								<setting value="once"/>
-							</entry>
-							<entry name="document" expanded="1" casttotargettypemode="cast-in-subtree">
-								<entry name="array" ns="1" expanded="1">
-									<entry name="item" ns="1" type="json-item" expanded="1">
-										<entry name="object" ns="1" inpkey="233" expanded="1">
-											<entry name="encounterID" ns="1" type="json-property" expanded="1">
-												<entry name="string" ns="1" inpkey="225" outkey="221"/>
-											</entry>
-											<entry name="date" ns="1" type="json-property" expanded="1">
-												<entry name="string" ns="1" inpkey="231" outkey="181"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<parameter usageKind="variable">
-							<root>
-								<entry name="root"/>
-								<entry name="array"/>
-							</root>
-						</parameter>
-						<json schema="..\..\Schemas\encounterID.schema.json"/>
-					</data>
-				</component>
-				<component name="json" library="json" uid="70" kind="31">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="756" lty="593" rbx="906" rby="793"/>
-					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace uid="http://www.altova.com/mapforce"/>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="compute-when">
-								<setting value="once"/>
-							</entry>
-							<entry name="document" expanded="1" casttotargettypemode="cast-in-subtree">
-								<entry name="array" ns="1" expanded="1">
-									<entry name="item" ns="1" type="json-item" expanded="1">
-										<entry name="object" ns="1" inpkey="245" expanded="1">
-											<entry name="encounterID" ns="1" type="json-property" expanded="1">
-												<entry name="string" ns="1" inpkey="44" outkey="13"/>
-											</entry>
-											<entry name="date" ns="1" type="json-property" expanded="1">
-												<entry name="string" ns="1" inpkey="24" outkey="251"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<parameter usageKind="variable">
-							<root>
-								<entry name="root"/>
-								<entry name="array"/>
-							</root>
-						</parameter>
-						<json schema="..\..\Schemas\encounterID.schema.json"/>
-					</data>
-				</component>
 				<component name="encounterID" library="core" uid="79" kind="3">
 					<sources>
 						<datapoint pos="0" key="222"/>
@@ -764,16 +658,6 @@
 					</targets>
 					<view ltx="1682" lty="-187" rbx="1738" rby="-133"/>
 				</component>
-				<component name="not-equal" library="core" uid="92" kind="5">
-					<sources>
-						<datapoint pos="0" key="266"/>
-						<datapoint pos="1" key="267"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="268"/>
-					</targets>
-					<view ltx="1613" lty="-118" rbx="1691" rby="-64"/>
-				</component>
 				<component name="constant" library="core" uid="90" kind="2">
 					<targets>
 						<datapoint pos="0" key="269"/>
@@ -782,36 +666,6 @@
 					<data>
 						<constant value="No Results" datatype="string"/>
 					</data>
-				</component>
-				<component name="constant" library="core" uid="93" kind="2">
-					<targets>
-						<datapoint pos="0" key="259"/>
-					</targets>
-					<view ltx="1472" lty="-169" rbx="1628" rby="-152"/>
-					<data>
-						<constant value="2.16.840.1.113883.10.20.22.2.3" datatype="string"/>
-					</data>
-				</component>
-				<component name="logical-and" library="core" uid="95" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="262"/>
-						<datapoint pos="1" key="265"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="264"/>
-					</targets>
-					<view ltx="1737" lty="-114" rbx="1822" rby="-58"/>
-				</component>
-				<component name="observation" library="core" uid="45" kind="3">
-					<sources>
-						<datapoint pos="0" key="146"/>
-						<datapoint pos="1" key="172"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="157"/>
-						<datapoint/>
-					</targets>
-					<view ltx="1687" lty="-52" rbx="1800" rby="2"/>
 				</component>
 				<component name="exception" library="core" uid="88" kind="18">
 					<sources>
@@ -838,36 +692,6 @@
 					<data>
 						<constant value="VITAL SIGNS" datatype="string"/>
 					</data>
-				</component>
-				<component name="equal" library="core" uid="77" kind="5">
-					<sources>
-						<datapoint pos="0" key="103"/>
-						<datapoint pos="1" key="116"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="39"/>
-					</targets>
-					<view ltx="432" lty="-122" rbx="488" rby="-68"/>
-				</component>
-				<component name="not-exists" library="core" uid="98" kind="5">
-					<sources>
-						<datapoint pos="0" key="273"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="274"/>
-					</targets>
-					<view ltx="411" lty="360" rbx="488" rby="398"/>
-				</component>
-				<component name="logical-and" library="core" uid="83" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="40"/>
-						<datapoint pos="1" key="52"/>
-						<datapoint pos="2" key="275"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="53"/>
-					</targets>
-					<view ltx="514" lty="-89" rbx="606" rby="-16"/>
 				</component>
 				<component name="value" library="core" uid="32" kind="3">
 					<sources>
@@ -901,34 +725,109 @@
 					</targets>
 					<view ltx="602" lty="602" rbx="715" rby="656"/>
 				</component>
-				<component name="exists" library="core" uid="82" kind="5">
-					<sources>
-						<datapoint pos="0" key="64"/>
-					</sources>
+				<component name="constant" library="core" uid="23" kind="2">
 					<targets>
-						<datapoint pos="0" key="51"/>
+						<datapoint pos="0" key="102"/>
 					</targets>
-					<view ltx="412" lty="-62" rbx="488" rby="-24"/>
+					<view ltx="227" lty="-99" rbx="383" rby="-82"/>
+					<data>
+						<constant value="2.16.840.1.113883.10.20.22.4.27" datatype="string"/>
+					</data>
 				</component>
-				<component name="exists" library="core" uid="78" kind="5">
+				<component name="encounter" library="core" uid="36" kind="3">
 					<sources>
-						<datapoint pos="0" key="56"/>
+						<datapoint pos="0" key="197"/>
+						<datapoint pos="1" key="184"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="49"/>
+						<datapoint pos="0" key="232"/>
+						<datapoint/>
 					</targets>
-					<view ltx="412" lty="-9" rbx="488" rby="29"/>
+					<view ltx="619" lty="111" rbx="732" rby="165"/>
 				</component>
-				<component name="if-else" library="core" uid="99" kind="4">
+				<component name="equal" library="core" uid="67" kind="5">
 					<sources>
-						<datapoint pos="0" key="276"/>
-						<datapoint pos="1" key="277"/>
-						<datapoint pos="2" key="278"/>
+						<datapoint pos="0" key="210"/>
+						<datapoint pos="1" key="189"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="279"/>
+						<datapoint pos="0" key="183"/>
 					</targets>
-					<view ltx="521" lty="342" rbx="625" rby="415"/>
+					<view ltx="531" lty="96" rbx="587" rby="150"/>
+				</component>
+				<component name="constant" library="core" uid="66" kind="2">
+					<targets>
+						<datapoint pos="0" key="209"/>
+					</targets>
+					<view ltx="431" lty="66" rbx="587" rby="83"/>
+					<data>
+						<constant value="2.16.840.1.113883.10.20.22.4.49" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="103" kind="2">
+					<targets>
+						<datapoint pos="0" key="280"/>
+					</targets>
+					<view ltx="458" lty="215" rbx="504" rby="232"/>
+					<data>
+						<constant value="-" datatype="string"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="25" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="148"/>
+						<datapoint pos="1" key="149"/>
+						<datapoint pos="2" key="163"/>
+						<datapoint pos="3" key="143"/>
+						<datapoint pos="4" key="180"/>
+						<datapoint pos="5" key="175"/>
+						<datapoint pos="6" key="174"/>
+						<datapoint pos="7" key="156"/>
+						<datapoint pos="8" key="160"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="211"/>
+					</targets>
+					<view ltx="1012" lty="291" rbx="1104" rby="466"/>
+				</component>
+				<component name="constant" library="core" uid="104" kind="2">
+					<targets>
+						<datapoint pos="0" key="286"/>
+					</targets>
+					<view ltx="439" lty="540" rbx="485" rby="557"/>
+					<data>
+						<constant value="-" datatype="string"/>
+					</data>
+				</component>
+				<component name="not-equal" library="core" uid="92" kind="5">
+					<sources>
+						<datapoint pos="0" key="266"/>
+						<datapoint pos="1" key="267"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="268"/>
+					</targets>
+					<view ltx="1613" lty="-118" rbx="1691" rby="-64"/>
+				</component>
+				<component name="count" library="core" uid="17" kind="5">
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="74"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="144"/>
+					</targets>
+					<view ltx="934" lty="-118" rbx="1059" rby="-64"/>
+				</component>
+				<component name="add" library="core" uid="54" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="145"/>
+						<datapoint pos="1" key="170"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="41"/>
+					</targets>
+					<view ltx="1123" lty="-10" rbx="1205" rby="46"/>
 				</component>
 				<component name="Observations" library="json" uid="61" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
@@ -1034,70 +933,66 @@
 						<json schema="..\..\..\10Bridge\Schemas\MapToInflator.schema.json"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="23" kind="2">
-					<targets>
-						<datapoint pos="0" key="102"/>
-					</targets>
-					<view ltx="248" lty="-106" rbx="404" rby="-89"/>
-					<data>
-						<constant value="2.16.840.1.113883.10.20.22.4.27" datatype="string"/>
-					</data>
-				</component>
-				<component name="encounter" library="core" uid="36" kind="3">
+				<component name="count" library="core" uid="18" kind="5">
 					<sources>
-						<datapoint pos="0" key="197"/>
-						<datapoint pos="1" key="184"/>
+						<datapoint/>
+						<datapoint pos="1" key="168"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="232"/>
+						<datapoint pos="0" key="169"/>
+					</targets>
+					<view ltx="940" lty="-21" rbx="1065" rby="33"/>
+				</component>
+				<component name="logical-and" library="core" uid="95" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="262"/>
+						<datapoint pos="1" key="265"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="264"/>
+					</targets>
+					<view ltx="1737" lty="-114" rbx="1822" rby="-58"/>
+				</component>
+				<component name="observation" library="core" uid="45" kind="3">
+					<sources>
+						<datapoint pos="0" key="146"/>
+						<datapoint pos="1" key="172"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="157"/>
 						<datapoint/>
 					</targets>
-					<view ltx="619" lty="111" rbx="732" rby="165"/>
+					<view ltx="1687" lty="-52" rbx="1800" rby="2"/>
 				</component>
-				<component name="equal" library="core" uid="67" kind="5">
-					<sources>
-						<datapoint pos="0" key="210"/>
-						<datapoint pos="1" key="189"/>
-					</sources>
+				<component name="constant" library="core" uid="93" kind="2">
 					<targets>
-						<datapoint pos="0" key="183"/>
+						<datapoint pos="0" key="259"/>
 					</targets>
-					<view ltx="531" lty="96" rbx="587" rby="150"/>
-				</component>
-				<component name="constant" library="core" uid="66" kind="2">
-					<targets>
-						<datapoint pos="0" key="209"/>
-					</targets>
-					<view ltx="431" lty="66" rbx="587" rby="83"/>
+					<view ltx="1472" lty="-169" rbx="1628" rby="-152"/>
 					<data>
-						<constant value="2.16.840.1.113883.10.20.22.4.49" datatype="string"/>
+						<constant value="2.16.840.1.113883.10.20.22.2.3" datatype="string"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="103" kind="2">
-					<targets>
-						<datapoint pos="0" key="280"/>
-					</targets>
-					<view ltx="458" lty="215" rbx="504" rby="232"/>
-					<data>
-						<constant value="-" datatype="string"/>
-					</data>
-				</component>
-				<component name="concat" library="core" uid="25" kind="5" growable="1" growablebasename="value">
+				<component name="equal" library="core" uid="77" kind="5">
 					<sources>
-						<datapoint pos="0" key="148"/>
-						<datapoint pos="1" key="149"/>
-						<datapoint pos="2" key="163"/>
-						<datapoint pos="3" key="143"/>
-						<datapoint pos="4" key="180"/>
-						<datapoint pos="5" key="175"/>
-						<datapoint pos="6" key="174"/>
-						<datapoint pos="7" key="156"/>
-						<datapoint pos="8" key="160"/>
+						<datapoint pos="0" key="103"/>
+						<datapoint pos="1" key="116"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="211"/>
+						<datapoint pos="0" key="39"/>
 					</targets>
-					<view ltx="1012" lty="291" rbx="1104" rby="466"/>
+					<view ltx="411" lty="-115" rbx="467" rby="-61"/>
+				</component>
+				<component name="concat" library="core" uid="105" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="288"/>
+						<datapoint pos="1" key="287"/>
+						<datapoint pos="2" key="285"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="289"/>
+					</targets>
+					<view ltx="514" lty="507" rbx="606" rby="580"/>
 				</component>
 				<component name="concat" library="core" uid="102" kind="5" growable="1" growablebasename="value">
 					<sources>
@@ -1110,20 +1005,108 @@
 					</targets>
 					<view ltx="533" lty="182" rbx="625" rby="255"/>
 				</component>
-				<component name="constant" library="core" uid="104" kind="2">
+				<component name="exists" library="core" uid="82" kind="5">
+					<sources>
+						<datapoint pos="0" key="64"/>
+					</sources>
 					<targets>
-						<datapoint pos="0" key="286"/>
+						<datapoint pos="0" key="51"/>
 					</targets>
-					<view ltx="439" lty="540" rbx="485" rby="557"/>
+					<view ltx="412" lty="-62" rbx="488" rby="-24"/>
+				</component>
+				<component name="if-else" library="core" uid="99" kind="4">
+					<sources>
+						<datapoint pos="0" key="276"/>
+						<datapoint pos="1" key="277"/>
+						<datapoint pos="2" key="278"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="279"/>
+					</targets>
+					<view ltx="521" lty="342" rbx="625" rby="415"/>
+				</component>
+				<component name="not-exists" library="core" uid="98" kind="5">
+					<sources>
+						<datapoint pos="0" key="273"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="274"/>
+					</targets>
+					<view ltx="411" lty="360" rbx="488" rby="398"/>
+				</component>
+				<component name="exists" library="core" uid="78" kind="5">
+					<sources>
+						<datapoint pos="0" key="56"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="49"/>
+					</targets>
+					<view ltx="411" lty="-21" rbx="487" rby="17"/>
+				</component>
+				<component name="logical-and" library="core" uid="83" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="40"/>
+						<datapoint pos="1" key="52"/>
+						<datapoint pos="2" key="275"/>
+						<datapoint pos="3" key="293"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="514" lty="-89" rbx="606" rby="1"/>
+				</component>
+				<component name="exists" library="core" uid="107" kind="5">
+					<sources>
+						<datapoint pos="0" key="291"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="292"/>
+					</targets>
+					<view ltx="409" lty="16" rbx="485" rby="54"/>
+				</component>
+				<component name="json" library="json" uid="68" kind="31">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="757" lty="130" rbx="907" rby="330"/>
 					<data>
-						<constant value="-" datatype="string"/>
+						<root>
+							<header>
+								<namespaces>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="compute-when">
+								<setting value="once"/>
+							</entry>
+							<entry name="document" expanded="1" casttotargettypemode="cast-in-subtree">
+								<entry name="array" ns="1" expanded="1">
+									<entry name="item" ns="1" type="json-item" expanded="1">
+										<entry name="object" ns="1" inpkey="233" expanded="1">
+											<entry name="encounterID" ns="1" type="json-property" expanded="1">
+												<entry name="string" ns="1" inpkey="225" outkey="221"/>
+											</entry>
+											<entry name="date" ns="1" type="json-property" expanded="1">
+												<entry name="string" ns="1" inpkey="231" outkey="181"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<parameter usageKind="variable">
+							<root>
+								<entry name="root"/>
+								<entry name="array"/>
+							</root>
+						</parameter>
+						<json schema="..\..\Schemas\encounterID.schema.json"/>
 					</data>
 				</component>
 				<component name="CDA" library="xml" uid="84" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="89" lty="68" rbx="373" rby="627"/>
 					<data>
-						<root scrollposition="6104">
+						<root scrollposition="3935">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -1132,8 +1115,8 @@
 								</namespaces>
 							</header>
 							<entry name="FileInstance" ns="2" expanded="1">
-								<file role="inputinstance" name="..\Data\HIE_CCDA_1611606_230569726_30086936_01132026_230801.XML"/>
-								<file role="outputinstance" name="..\Data\HIE_CCDA_1611606_230569726_30086936_01132026_230801.XML"/>
+								<file role="inputinstance" name="..\Data\713 - Huneke, Laraine M_2026-03-04 20_05_48_000.xml"/>
+								<file role="outputinstance" name="..\Data\713 - Huneke, Laraine M_2026-03-04 20_05_48_000.xml"/>
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="ClinicalDocument" ns="1" expanded="1">
 										<entry name="recordTarget" ns="1" expanded="1">
@@ -1242,7 +1225,7 @@
 																	<entry name="root" type="attribute" outkey="188"/>
 																</entry>
 																<entry name="id" ns="1" expanded="1">
-																	<entry name="root" type="attribute" outkey="258"/>
+																	<entry name="extension" type="attribute" outkey="294"/>
 																</entry>
 																<entry name="effectiveTime" ns="1" expanded="1">
 																	<entry name="value" type="attribute" outkey="215"/>
@@ -1277,7 +1260,7 @@
 																			<entry name="root" type="attribute" outkey="115"/>
 																		</entry>
 																		<entry name="id" ns="1" expanded="1">
-																			<entry name="root" type="attribute" outkey="63"/>
+																			<entry name="extension" type="attribute" outkey="295"/>
 																		</entry>
 																		<entry name="code" ns="1" expanded="1">
 																			<entry name="code" type="attribute" outkey="190"/>
@@ -1409,22 +1392,49 @@
 						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument"/>
 					</data>
 				</component>
-				<component name="concat" library="core" uid="105" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="288"/>
-						<datapoint pos="1" key="287"/>
-						<datapoint pos="2" key="285"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="289"/>
-					</targets>
-					<view ltx="514" lty="507" rbx="606" rby="580"/>
+				<component name="json" library="json" uid="70" kind="31">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="756" lty="593" rbx="906" rby="793"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="compute-when">
+								<setting value="once"/>
+							</entry>
+							<entry name="document" expanded="1" casttotargettypemode="cast-in-subtree">
+								<entry name="array" ns="1" expanded="1">
+									<entry name="item" ns="1" type="json-item" expanded="1">
+										<entry name="object" ns="1" inpkey="245" expanded="1">
+											<entry name="encounterID" ns="1" type="json-property" expanded="1">
+												<entry name="string" ns="1" inpkey="44" outkey="13"/>
+											</entry>
+											<entry name="date" ns="1" type="json-property" expanded="1">
+												<entry name="string" ns="1" inpkey="24" outkey="251"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<parameter usageKind="variable">
+							<root>
+								<entry name="root"/>
+								<entry name="array"/>
+							</root>
+						</parameter>
+						<json schema="..\..\Schemas\encounterID.schema.json"/>
+					</data>
 				</component>
 				<component name="AAO_NextGen_Observation" library="json" uid="73" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
 					<view ltx="1128" lty="66" rbx="1397" rby="472"/>
 					<data>
-						<root scrollposition="190">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -1575,11 +1585,11 @@
 			<edge from="33" to="38"/>
 			<edge from="39" to="40"/>
 			<edge from="41" to="42"/>
-			<edge from="258" to="44"/>
+			<edge from="294" to="44"/>
 			<edge from="45" to="46"/>
 			<edge from="51" to="52"/>
 			<edge from="279" to="56"/>
-			<edge from="63" to="64"/>
+			<edge from="295" to="64"/>
 			<edge from="67" to="68"/>
 			<edge from="69" to="70"/>
 			<edge from="71" to="72"/>
@@ -1672,7 +1682,7 @@
 			<edge from="219" to="220"/>
 			<edge from="221" to="222"/>
 			<edge from="223" to="224"/>
-			<edge from="258" to="225"/>
+			<edge from="294" to="225"/>
 			<edge from="226" to="227"/>
 			<edge from="228" to="229"/>
 			<edge from="230" to="231"/>
@@ -1703,12 +1713,14 @@
 			<edge from="274" to="276"/>
 			<edge from="190" to="277"/>
 			<edge from="55" to="278"/>
-			<edge from="63" to="281"/>
+			<edge from="295" to="281"/>
 			<edge from="280" to="282"/>
 			<edge from="190" to="283"/>
 			<edge from="190" to="285"/>
 			<edge from="286" to="287"/>
-			<edge from="63" to="288"/>
+			<edge from="295" to="288"/>
+			<edge from="200" to="291"/>
+			<edge from="292" to="293"/>
 		</connections>
 	</component>
 </mapping>

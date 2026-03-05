@@ -434,15 +434,6 @@
 						<json schema="..\..\..\10Bridge\Schemas\MapToInflator.schema.json" inputinstance="..\..\..\10Bridge\Schemas\MapToInflator.schema.json" outputinstance="..\..\..\10Bridge\Schemas\MapToInflator.schema.json"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="32" kind="2">
-					<targets>
-						<datapoint pos="0" key="80"/>
-					</targets>
-					<view ltx="565" lty="445" rbx="641" rby="462"/>
-					<data>
-						<constant value="tel:+1-" datatype="string"/>
-					</data>
-				</component>
 				<component name="Meta" library="json" uid="22" kind="31">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="218" lty="-44" rbx="398" rby="86"/>
@@ -490,16 +481,35 @@
 					</targets>
 					<view ltx="612" lty="165" rbx="737" rby="219"/>
 				</component>
-				<component name="if-else" library="core" uid="37" kind="4">
+				<component name="representedCustodianOrgan..." library="core" uid="44" kind="3">
 					<sources>
-						<datapoint pos="0" key="91"/>
-						<datapoint pos="1" key="33"/>
-						<datapoint pos="2" key="98"/>
+						<datapoint pos="0" key="111"/>
+						<datapoint pos="1" key="113"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="31"/>
+						<datapoint pos="0" key="110"/>
+						<datapoint/>
 					</targets>
-					<view ltx="576" lty="287" rbx="680" rby="360"/>
+					<view ltx="375" lty="163" rbx="559" rby="217"/>
+				</component>
+				<component name="constant" library="core" uid="32" kind="2">
+					<targets>
+						<datapoint pos="0" key="80"/>
+					</targets>
+					<view ltx="565" lty="445" rbx="629" rby="462"/>
+					<data>
+						<constant value="TEL: " datatype="string"/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="47" kind="5">
+					<sources>
+						<datapoint pos="0" key="116"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="117"/>
+					</targets>
+					<view ltx="520" lty="502" rbx="635" rby="556"/>
 				</component>
 				<component name="exists" library="core" uid="43" kind="5">
 					<sources>
@@ -514,7 +524,7 @@
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="126" lty="222" rbx="410" rby="781"/>
 					<data>
-						<root scrollposition="804">
+						<root scrollposition="852">
 							<header>
 								<namespaces>
 									<namespace uid="urn:hl7-org:v3"/>
@@ -725,19 +735,19 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML" outputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\10001 - Kuznia, Douglas A_2026-03-02 18_21_57_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml"/>
 					</data>
 				</component>
-				<component name="representedCustodianOrgan..." library="core" uid="44" kind="3">
+				<component name="if-else" library="core" uid="37" kind="4">
 					<sources>
-						<datapoint pos="0" key="111"/>
-						<datapoint pos="1" key="113"/>
+						<datapoint pos="0" key="91"/>
+						<datapoint pos="1" key="33"/>
+						<datapoint pos="2" key="98"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="110"/>
-						<datapoint/>
+						<datapoint pos="0" key="31"/>
 					</targets>
-					<view ltx="375" lty="163" rbx="559" rby="217"/>
+					<view ltx="576" lty="287" rbx="680" rby="360"/>
 				</component>
 				<component name="AAO_NextGen_ServiceLocations" library="json" uid="38" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
@@ -870,10 +880,9 @@
 							<edge vertexkey="33"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="31">
+					<vertex vertexkey="117">
 						<edges>
 							<edge vertexkey="32"/>
-							<edge vertexkey="114"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="34">
@@ -979,6 +988,7 @@
 						<edges>
 							<edge vertexkey="77"/>
 							<edge vertexkey="98"/>
+							<edge vertexkey="116"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="78">
@@ -1065,6 +1075,11 @@
 					<vertex vertexkey="112">
 						<edges>
 							<edge vertexkey="113"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="114"/>
 						</edges>
 					</vertex>
 				</vertices>

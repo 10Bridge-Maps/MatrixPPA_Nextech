@@ -475,7 +475,7 @@
 					</targets>
 					<view ltx="625" lty="584" rbx="702" rby="622"/>
 				</component>
-				<component name="section" library="core" uid="49" kind="3">
+				<component name="substanceAdministration" library="core" uid="49" kind="3">
 					<sources>
 						<datapoint pos="0" key="127"/>
 						<datapoint pos="1" key="121"/>
@@ -484,7 +484,7 @@
 						<datapoint pos="0" key="38"/>
 						<datapoint/>
 					</targets>
-					<view ltx="625" lty="193" rbx="738" rby="247"/>
+					<view ltx="625" lty="193" rbx="780" rby="247"/>
 				</component>
 				<component name="value-map" library="core" uid="52" kind="23">
 					<sources>
@@ -524,17 +524,6 @@
 					</targets>
 					<view ltx="719" lty="584" rbx="823" rby="657"/>
 				</component>
-				<component name="logical-and" library="core" uid="48" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="109"/>
-						<datapoint pos="1" key="125"/>
-						<datapoint pos="2" key="161"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="120"/>
-					</targets>
-					<view ltx="497" lty="156" rbx="589" rby="229"/>
-				</component>
 				<component name="exists" library="core" uid="41" kind="5">
 					<sources>
 						<datapoint pos="0" key="88"/>
@@ -542,16 +531,7 @@
 					<targets>
 						<datapoint pos="0" key="162"/>
 					</targets>
-					<view ltx="326" lty="157" rbx="402" rby="195"/>
-				</component>
-				<component name="exists" library="core" uid="39" kind="5">
-					<sources>
-						<datapoint pos="0" key="55"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="163"/>
-					</targets>
-					<view ltx="326" lty="209" rbx="402" rby="247"/>
+					<view ltx="320" lty="158" rbx="396" rby="196"/>
 				</component>
 				<component name="constant" library="core" uid="56" kind="2">
 					<targets>
@@ -631,13 +611,76 @@
 						<json schema="..\..\Schemas\encounterID.schema.json"/>
 					</data>
 				</component>
+				<component name="json" library="json" uid="67" kind="31">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="573" lty="898" rbx="723" rby="1098"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+								<entry name="array" expanded="1">
+									<entry name="item" type="json-item" expanded="1">
+										<entry name="object" inpkey="154" expanded="1">
+											<entry name="encounterID" type="json-property" expanded="1"/>
+											<entry name="date" type="json-property" expanded="1">
+												<entry name="string" inpkey="158" outkey="149"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<parameter usageKind="variable">
+							<root>
+								<entry name="root"/>
+								<entry name="array"/>
+							</root>
+						</parameter>
+						<json schema="..\..\Schemas\encounterID.schema.json"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="57" kind="5">
+					<sources>
+						<datapoint pos="0" key="129"/>
+						<datapoint pos="1" key="150"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="151"/>
+					</targets>
+					<view ltx="767" lty="928" rbx="823" rby="982"/>
+				</component>
+				<component name="encounter" library="core" uid="65" kind="3">
+					<sources>
+						<datapoint pos="0" key="134"/>
+						<datapoint pos="1" key="139"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="136"/>
+						<datapoint/>
+					</targets>
+					<view ltx="414" lty="664" rbx="527" rby="718"/>
+				</component>
+				<component name="constant" library="core" uid="63" kind="2">
+					<targets>
+						<datapoint pos="0" key="131"/>
+					</targets>
+					<view ltx="297" lty="720" rbx="453" rby="737"/>
+					<data>
+						<constant value="2.16.840.1.113883.10.20.22.4.49" datatype="string"/>
+					</data>
+				</component>
 				<component name="constant" library="core" uid="43" kind="2">
 					<targets>
 						<datapoint pos="0" key="50"/>
 					</targets>
-					<view ltx="167" lty="100" rbx="323" rby="117"/>
+					<view ltx="141" lty="109" rbx="297" rby="126"/>
 					<data>
-						<constant value="2.16.840.1.113883.10.20.22.2.2" datatype="string"/>
+						<constant value="2.16.840.1.113883.10.20.22.4.52" datatype="string"/>
 					</data>
 				</component>
 				<component name="equal" library="core" uid="42" kind="5">
@@ -648,13 +691,22 @@
 					<targets>
 						<datapoint pos="0" key="108"/>
 					</targets>
-					<view ltx="346" lty="92" rbx="402" rby="146"/>
+					<view ltx="320" lty="101" rbx="376" rby="155"/>
+				</component>
+				<component name="exists" library="core" uid="39" kind="5">
+					<sources>
+						<datapoint pos="0" key="55"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="163"/>
+					</targets>
+					<view ltx="320" lty="209" rbx="396" rby="247"/>
 				</component>
 				<component name="CDA" library="xml" uid="53" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="3" lty="259" rbx="287" rby="818"/>
 					<data>
-						<root scrollposition="4773">
+						<root scrollposition="3260">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -663,8 +715,8 @@
 								</namespaces>
 							</header>
 							<entry name="FileInstance" ns="2" expanded="1">
-								<file role="inputinstance" name="..\Data\0_original_CapitalENTandSinusCenter_a04da3fa47994b939922cca0be0c7f81.xml"/>
-								<file role="outputinstance" name="..\Data\0_original_CapitalENTandSinusCenter_a04da3fa47994b939922cca0be0c7f81.xml"/>
+								<file role="inputinstance" name="..\Data\403 - DiGiovanni, Linda_2026-03-02 19_45_27_000.xml"/>
+								<file role="outputinstance" name="..\Data\403 - DiGiovanni, Linda_2026-03-02 19_45_27_000.xml"/>
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="ClinicalDocument" ns="1" expanded="1">
 										<entry name="recordTarget" ns="1" expanded="1">
@@ -686,10 +738,8 @@
 										<entry name="component" ns="1" expanded="1">
 											<entry name="structuredBody" ns="1" expanded="1">
 												<entry name="component" ns="1" expanded="1">
-													<entry name="section" ns="1" outkey="126" expanded="1">
-														<entry name="templateId" ns="1" expanded="1">
-															<entry name="root" type="attribute" outkey="116"/>
-														</entry>
+													<entry name="section" ns="1" expanded="1">
+														<entry name="templateId" ns="1" expanded="1"/>
 														<entry name="entry" ns="1" expanded="1">
 															<entry name="act" ns="1">
 																<entry name="templateId" ns="1" expanded="1"/>
@@ -767,7 +817,7 @@
 																	</entry>
 																</entry>
 															</entry>
-															<entry name="encounter" ns="1" outkey="164" expanded="1">
+															<entry name="encounter" ns="1" outkey="164">
 																<entry name="templateId" ns="1" expanded="1">
 																	<entry name="root" type="attribute" outkey="165"/>
 																</entry>
@@ -787,10 +837,12 @@
 																<entry name="id" ns="1" expanded="1"/>
 																<entry name="code" ns="1" expanded="1"/>
 															</entry>
-															<entry name="substanceAdministration" ns="1" expanded="1">
-																<entry name="templateId" ns="1" expanded="1"/>
+															<entry name="substanceAdministration" ns="1" outkey="181" expanded="1">
+																<entry name="templateId" ns="1" expanded="1">
+																	<entry name="root" type="attribute" outkey="182"/>
+																</entry>
 																<entry name="id" ns="1" expanded="1">
-																	<entry name="root" type="attribute" outkey="106"/>
+																	<entry name="extension" type="attribute" outkey="183"/>
 																</entry>
 																<entry name="statusCode" ns="1" expanded="1">
 																	<entry name="code" type="attribute" outkey="168"/>
@@ -824,49 +876,6 @@
 						</root>
 						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument"/>
 					</data>
-				</component>
-				<component name="json" library="json" uid="67" kind="31">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="573" lty="898" rbx="723" rby="1098"/>
-					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-								<entry name="array" expanded="1">
-									<entry name="item" type="json-item" expanded="1">
-										<entry name="object" inpkey="154" expanded="1">
-											<entry name="encounterID" type="json-property" expanded="1"/>
-											<entry name="date" type="json-property" expanded="1">
-												<entry name="string" inpkey="158" outkey="149"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<parameter usageKind="variable">
-							<root>
-								<entry name="root"/>
-								<entry name="array"/>
-							</root>
-						</parameter>
-						<json schema="..\..\Schemas\encounterID.schema.json"/>
-					</data>
-				</component>
-				<component name="equal" library="core" uid="57" kind="5">
-					<sources>
-						<datapoint pos="0" key="129"/>
-						<datapoint pos="1" key="150"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="151"/>
-					</targets>
-					<view ltx="767" lty="928" rbx="823" rby="982"/>
 				</component>
 				<component name="AAO_NextGen_Immunization" library="json" uid="54" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
@@ -938,25 +947,33 @@
 						<json schema="..\..\Schemas\Immunization.schema.json"/>
 					</data>
 				</component>
-				<component name="encounter" library="core" uid="65" kind="3">
+				<component name="constant" library="core" uid="68" kind="2">
+					<targets>
+						<datapoint pos="0" key="179"/>
+					</targets>
+					<view ltx="1244" lty="138" rbx="1410" rby="155"/>
+					<data>
+						<constant value="Data found for Immunizations - fix map" datatype="string"/>
+					</data>
+				</component>
+				<component name="logical-and" library="core" uid="48" kind="5" growable="1" growablebasename="value">
 					<sources>
-						<datapoint pos="0" key="134"/>
-						<datapoint pos="1" key="139"/>
+						<datapoint pos="0" key="109"/>
+						<datapoint pos="1" key="125"/>
+						<datapoint pos="2" key="161"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="136"/>
-						<datapoint/>
+						<datapoint pos="0" key="120"/>
 					</targets>
-					<view ltx="414" lty="664" rbx="527" rby="718"/>
+					<view ltx="497" lty="156" rbx="589" rby="229"/>
 				</component>
-				<component name="constant" library="core" uid="63" kind="2">
-					<targets>
-						<datapoint pos="0" key="131"/>
-					</targets>
-					<view ltx="297" lty="720" rbx="453" rby="737"/>
-					<data>
-						<constant value="2.16.840.1.113883.10.20.22.4.49" datatype="string"/>
-					</data>
+				<component name="exception" library="core" uid="69" kind="18">
+					<sources>
+						<datapoint pos="0" key="178"/>
+						<datapoint pos="1" key="180"/>
+					</sources>
+					<view ltx="1437" lty="144" rbx="1515" rby="198"/>
+					<data/>
 				</component>
 			</children>
 		</structure>
@@ -991,7 +1008,7 @@
 			<edge from="48" to="49"/>
 			<edge from="50" to="51"/>
 			<edge from="52" to="53"/>
-			<edge from="106" to="55"/>
+			<edge from="183" to="55"/>
 			<edge from="44" to="56"/>
 			<edge from="38" to="57"/>
 			<edge from="58" to="59"/>
@@ -1019,10 +1036,10 @@
 			<edge from="100" to="101"/>
 			<edge from="104" to="105"/>
 			<edge from="108" to="109"/>
-			<edge from="116" to="117"/>
+			<edge from="182" to="117"/>
 			<edge from="120" to="121"/>
 			<edge from="162" to="125"/>
-			<edge from="126" to="127"/>
+			<edge from="181" to="127"/>
 			<edge from="128" to="129"/>
 			<edge from="165" to="130"/>
 			<edge from="131" to="132"/>
@@ -1040,13 +1057,15 @@
 			<edge from="166" to="159"/>
 			<edge from="163" to="161"/>
 			<edge from="148" to="170"/>
-			<edge from="106" to="171"/>
+			<edge from="183" to="171"/>
 			<edge from="86" to="172"/>
 			<edge from="160" to="173"/>
 			<edge from="98" to="174"/>
 			<edge from="168" to="175"/>
 			<edge from="169" to="176"/>
 			<edge from="169" to="177"/>
+			<edge from="38" to="178"/>
+			<edge from="179" to="180"/>
 		</connections>
 	</component>
 </mapping>

@@ -516,15 +516,6 @@
 						<constant value="messagegroupid" datatype="string"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="35" kind="2">
-					<targets>
-						<datapoint pos="0" key="66"/>
-					</targets>
-					<view ltx="129" lty="116" rbx="285" rby="133"/>
-					<data>
-						<constant value="2.16.840.1.113883.10.20.22.4.46" datatype="string"/>
-					</data>
-				</component>
 				<component name="empty" library="lang" uid="54" kind="5">
 					<sources>
 						<datapoint pos="0" key="129"/>
@@ -555,17 +546,6 @@
 					</targets>
 					<view ltx="311" lty="116" rbx="367" rby="170"/>
 				</component>
-				<component name="observation" library="core" uid="51" kind="3">
-					<sources>
-						<datapoint pos="0" key="117"/>
-						<datapoint pos="1" key="61"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="85"/>
-						<datapoint/>
-					</targets>
-					<view ltx="515" lty="171" rbx="628" rby="225"/>
-				</component>
 				<component name="exists" library="core" uid="58" kind="5">
 					<sources>
 						<datapoint pos="0" key="142"/>
@@ -575,15 +555,67 @@
 					</targets>
 					<view ltx="291" lty="171" rbx="367" rby="209"/>
 				</component>
-				<component name="logical-and" library="core" uid="60" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="144"/>
-						<datapoint pos="1" key="145"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="146"/>
-					</targets>
-					<view ltx="396" lty="153" rbx="481" rby="209"/>
+				<component name="AAO_NextGen_FamilyHx" library="json" uid="47" kind="31">
+					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
+					<view ltx="850" lty="226" rbx="1158" rby="525"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" outkey="64" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="root" expanded="1">
+										<entry name="array" expanded="1">
+											<entry name="item" type="json-item" expanded="1">
+												<entry name="object" inpkey="86" expanded="1">
+													<entry name="OrganizationEMRExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="12"/>
+													</entry>
+													<entry name="PatientExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="109"/>
+													</entry>
+													<entry name="ExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="71"/>
+													</entry>
+													<entry name="ExternalSource" type="json-property" expanded="1">
+														<entry name="string" inpkey="107"/>
+													</entry>
+													<entry name="Name" type="json-property" expanded="1">
+														<entry name="string" inpkey="6"/>
+													</entry>
+													<entry name="CodeSystemID" type="json-property" expanded="1">
+														<entry name="string" inpkey="105"/>
+													</entry>
+													<entry name="Code" type="json-property" expanded="1">
+														<entry name="string" inpkey="115"/>
+													</entry>
+													<entry name="RelationshipCodeSystemID" type="json-property" expanded="1">
+														<entry name="string" inpkey="124"/>
+													</entry>
+													<entry name="RelationshipCode" type="json-property" expanded="1">
+														<entry name="string" inpkey="141"/>
+													</entry>
+													<entry name="ConditionOutcomeCodeSystemID" type="json-property" expanded="1"/>
+													<entry name="ConditionOutcomeCode" type="json-property" expanded="1"/>
+													<entry name="OnsetAge" type="json-property" expanded="1"/>
+													<entry name="RecordedDate" type="json-property" expanded="1"/>
+													<entry name="IsDeleted" type="json-property" expanded="1">
+														<entry name="string" inpkey="37"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<parameter usageKind="stringserialize"/>
+						<json schema="..\..\Schemas\FamilyHx.schema.json" inputinstance="..\Data\ENTAndAllergyAssociates_FamilyHx.json" outputinstance="..\Data\ENTAndAllergyAssociates_FamilyHx.json"/>
+					</data>
 				</component>
 				<component name="CDA" library="xml" uid="52" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
@@ -775,69 +807,56 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_335985502_30005807_01082026_215752.XML" outputinstance="..\Data\HIE_CCDA_1611606_335985502_30005807_01082026_215752.XML"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml"/>
 					</data>
 				</component>
-				<component name="AAO_NextGen_FamilyHx" library="json" uid="47" kind="31">
-					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
-					<view ltx="850" lty="226" rbx="1158" rby="525"/>
+				<component name="constant" library="core" uid="35" kind="2">
+					<targets>
+						<datapoint pos="0" key="66"/>
+					</targets>
+					<view ltx="129" lty="116" rbx="285" rby="133"/>
 					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" outkey="64" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="root" expanded="1">
-										<entry name="array" expanded="1">
-											<entry name="item" type="json-item" expanded="1">
-												<entry name="object" inpkey="86" expanded="1">
-													<entry name="OrganizationEMRExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="12"/>
-													</entry>
-													<entry name="PatientExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="109"/>
-													</entry>
-													<entry name="ExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="71"/>
-													</entry>
-													<entry name="ExternalSource" type="json-property" expanded="1">
-														<entry name="string" inpkey="107"/>
-													</entry>
-													<entry name="Name" type="json-property" expanded="1">
-														<entry name="string" inpkey="6"/>
-													</entry>
-													<entry name="CodeSystemID" type="json-property" expanded="1">
-														<entry name="string" inpkey="105"/>
-													</entry>
-													<entry name="Code" type="json-property" expanded="1">
-														<entry name="string" inpkey="115"/>
-													</entry>
-													<entry name="RelationshipCodeSystemID" type="json-property" expanded="1">
-														<entry name="string" inpkey="124"/>
-													</entry>
-													<entry name="RelationshipCode" type="json-property" expanded="1">
-														<entry name="string" inpkey="141"/>
-													</entry>
-													<entry name="ConditionOutcomeCodeSystemID" type="json-property" expanded="1"/>
-													<entry name="ConditionOutcomeCode" type="json-property" expanded="1"/>
-													<entry name="OnsetAge" type="json-property" expanded="1"/>
-													<entry name="RecordedDate" type="json-property" expanded="1"/>
-													<entry name="IsDeleted" type="json-property" expanded="1">
-														<entry name="string" inpkey="37"/>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<parameter usageKind="stringserialize"/>
-						<json schema="..\..\Schemas\FamilyHx.schema.json" inputinstance="..\Data\ENTAndAllergyAssociates_FamilyHx.json" outputinstance="..\Data\ENTAndAllergyAssociates_FamilyHx.json"/>
+						<constant value="2.16.840.1.113883.10.20.22.4.46" datatype="string"/>
+					</data>
+				</component>
+				<component name="exception" library="core" uid="62" kind="18">
+					<sources>
+						<datapoint pos="0" key="149"/>
+						<datapoint pos="1" key="151"/>
+					</sources>
+					<view ltx="1434" lty="143" rbx="1512" rby="197"/>
+					<data>
+						<exception name="error"/>
+					</data>
+				</component>
+				<component name="logical-and" library="core" uid="60" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="144"/>
+						<datapoint pos="1" key="145"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="146"/>
+					</targets>
+					<view ltx="396" lty="153" rbx="481" rby="209"/>
+				</component>
+				<component name="observation" library="core" uid="51" kind="3">
+					<sources>
+						<datapoint pos="0" key="117"/>
+						<datapoint pos="1" key="61"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="85"/>
+						<datapoint/>
+					</targets>
+					<view ltx="515" lty="171" rbx="628" rby="225"/>
+				</component>
+				<component name="constant" library="core" uid="61" kind="2">
+					<targets>
+						<datapoint pos="0" key="150"/>
+					</targets>
+					<view ltx="1241" lty="137" rbx="1399" rby="154"/>
+					<data>
+						<constant value="Data found for FamilyHx - fix map" datatype="string"/>
 					</data>
 				</component>
 			</children>
@@ -1037,6 +1056,7 @@
 						<edges>
 							<edge vertexkey="86"/>
 							<edge vertexkey="87"/>
+							<edge vertexkey="149"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="90">
@@ -1126,6 +1146,11 @@
 					<vertex vertexkey="143">
 						<edges>
 							<edge vertexkey="145"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="150">
+						<edges>
+							<edge vertexkey="151"/>
 						</edges>
 					</vertex>
 				</vertices>

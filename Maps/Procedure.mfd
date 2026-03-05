@@ -529,16 +529,6 @@
 						</valuemap>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="43" kind="5">
-					<sources>
-						<datapoint pos="0" key="71"/>
-						<datapoint pos="1" key="75"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="170"/>
-					</targets>
-					<view ltx="524" lty="142" rbx="580" rby="196"/>
-				</component>
 				<component name="procedure" library="core" uid="44" kind="3">
 					<sources>
 						<datapoint pos="0" key="100"/>
@@ -587,26 +577,6 @@
 					</targets>
 					<view ltx="628" lty="751" rbx="705" rby="789"/>
 				</component>
-				<component name="exists" library="core" uid="49" kind="5">
-					<sources>
-						<datapoint pos="0" key="110"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="146"/>
-					</targets>
-					<view ltx="629" lty="445" rbx="705" rby="483"/>
-				</component>
-				<component name="logical-and" library="core" uid="50" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="171"/>
-						<datapoint pos="1" key="147"/>
-						<datapoint pos="2" key="184"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="76"/>
-					</targets>
-					<view ltx="538" lty="195" rbx="630" rby="268"/>
-				</component>
 				<component name="constant" library="core" uid="51" kind="2">
 					<targets>
 						<datapoint pos="0" key="104"/>
@@ -615,17 +585,6 @@
 					<data>
 						<constant value="0" datatype="string"/>
 					</data>
-				</component>
-				<component name="if-else" library="core" uid="52" kind="4">
-					<sources>
-						<datapoint pos="0" key="182"/>
-						<datapoint pos="1" key="151"/>
-						<datapoint pos="2" key="165"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="109"/>
-					</targets>
-					<view ltx="761" lty="751" rbx="865" rby="824"/>
 				</component>
 				<component name="value-map" library="core" uid="53" kind="23">
 					<sources>
@@ -653,37 +612,6 @@
 							<result name="result" type="string"/>
 						</valuemap>
 					</data>
-				</component>
-				<component name="if-else" library="core" uid="54" kind="4">
-					<sources>
-						<datapoint pos="0" key="169"/>
-						<datapoint pos="1" key="127"/>
-						<datapoint pos="2" key="157"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="152"/>
-					</targets>
-					<view ltx="761" lty="519" rbx="865" rby="592"/>
-				</component>
-				<component name="exists" library="core" uid="55" kind="5">
-					<sources>
-						<datapoint pos="0" key="166"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="183"/>
-					</targets>
-					<view ltx="628" lty="556" rbx="704" rby="594"/>
-				</component>
-				<component name="if-else" library="core" uid="58" kind="4">
-					<sources>
-						<datapoint pos="0" key="162"/>
-						<datapoint pos="1" key="143"/>
-						<datapoint pos="2" key="158"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="94"/>
-					</targets>
-					<view ltx="657" lty="371" rbx="761" rby="444"/>
 				</component>
 				<component name="exists" library="core" uid="59" kind="5">
 					<sources>
@@ -723,11 +651,83 @@
 					</targets>
 					<view ltx="624" lty="316" rbx="701" rby="354"/>
 				</component>
+				<component name="if-else" library="core" uid="56" kind="4">
+					<sources>
+						<datapoint pos="0" key="178"/>
+						<datapoint pos="1" key="128"/>
+						<datapoint pos="2" key="149"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="113"/>
+					</targets>
+					<view ltx="761" lty="282" rbx="865" rby="355"/>
+				</component>
+				<component name="equal" library="core" uid="43" kind="5">
+					<sources>
+						<datapoint pos="0" key="71"/>
+						<datapoint pos="1" key="75"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="170"/>
+					</targets>
+					<view ltx="524" lty="142" rbx="580" rby="196"/>
+				</component>
+				<component name="exists" library="core" uid="55" kind="5">
+					<sources>
+						<datapoint pos="0" key="166"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="183"/>
+					</targets>
+					<view ltx="628" lty="556" rbx="704" rby="594"/>
+				</component>
+				<component name="if-else" library="core" uid="54" kind="4">
+					<sources>
+						<datapoint pos="0" key="169"/>
+						<datapoint pos="1" key="127"/>
+						<datapoint pos="2" key="157"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="152"/>
+					</targets>
+					<view ltx="761" lty="519" rbx="865" rby="592"/>
+				</component>
+				<component name="if-else" library="core" uid="58" kind="4">
+					<sources>
+						<datapoint pos="0" key="162"/>
+						<datapoint pos="1" key="143"/>
+						<datapoint pos="2" key="158"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="94"/>
+					</targets>
+					<view ltx="657" lty="371" rbx="761" rby="444"/>
+				</component>
+				<component name="exists" library="core" uid="49" kind="5">
+					<sources>
+						<datapoint pos="0" key="110"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="146"/>
+					</targets>
+					<view ltx="629" lty="445" rbx="705" rby="483"/>
+				</component>
+				<component name="logical-and" library="core" uid="50" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="171"/>
+						<datapoint pos="1" key="147"/>
+						<datapoint pos="2" key="184"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="76"/>
+					</targets>
+					<view ltx="538" lty="195" rbx="630" rby="268"/>
+				</component>
 				<component name="CDA" library="xml" uid="62" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="214" lty="209" rbx="498" rby="768"/>
 					<data>
-						<root scrollposition="3877">
+						<root scrollposition="4714">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -924,19 +924,19 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML" outputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml"/>
 					</data>
 				</component>
-				<component name="if-else" library="core" uid="56" kind="4">
+				<component name="if-else" library="core" uid="52" kind="4">
 					<sources>
-						<datapoint pos="0" key="178"/>
-						<datapoint pos="1" key="128"/>
-						<datapoint pos="2" key="149"/>
+						<datapoint pos="0" key="182"/>
+						<datapoint pos="1" key="151"/>
+						<datapoint pos="2" key="165"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="113"/>
+						<datapoint pos="0" key="109"/>
 					</targets>
-					<view ltx="761" lty="282" rbx="865" rby="355"/>
+					<view ltx="761" lty="751" rbx="865" rby="824"/>
 				</component>
 				<component name="AAO_NextGen_Procedure" library="json" uid="57" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>

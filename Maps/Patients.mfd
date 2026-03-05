@@ -237,7 +237,7 @@
 					<targets>
 						<datapoint pos="0" key="106"/>
 					</targets>
-					<view ltx="488" lty="189" rbx="585" rby="206"/>
+					<view ltx="610" lty="136" rbx="707" rby="153"/>
 					<data>
 						<constant value="RowCount" datatype="string"/>
 					</data>
@@ -386,16 +386,6 @@
 					</targets>
 					<view ltx="712" lty="599" rbx="768" rby="653"/>
 				</component>
-				<component name="count" library="core" uid="34" kind="5">
-					<sources>
-						<datapoint/>
-						<datapoint pos="1" key="75"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="64"/>
-					</targets>
-					<view ltx="460" lty="123" rbx="585" rby="177"/>
-				</component>
 				<component name="if-else" library="core" uid="35" kind="4">
 					<sources>
 						<datapoint pos="0" key="34"/>
@@ -473,11 +463,61 @@
 					</targets>
 					<view ltx="387" lty="331" rbx="499" rby="385"/>
 				</component>
+				<component name="if-else" library="core" uid="43" kind="4">
+					<sources>
+						<datapoint pos="0" key="113"/>
+						<datapoint pos="1" key="114"/>
+						<datapoint pos="2" key="115"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="519" lty="346" rbx="623" rby="419"/>
+				</component>
+				<component name="constant" library="core" uid="42" kind="2">
+					<targets>
+						<datapoint pos="0" key="109"/>
+					</targets>
+					<view ltx="387" lty="412" rbx="477" rby="429"/>
+					<data>
+						<constant value="19010101" datatype="string"/>
+					</data>
+				</component>
+				<component name="count" library="core" uid="34" kind="5">
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="75"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="64"/>
+					</targets>
+					<view ltx="582" lty="70" rbx="707" rby="124"/>
+				</component>
+				<component name="patientRole" library="core" uid="44" kind="3">
+					<sources>
+						<datapoint pos="0" key="123"/>
+						<datapoint pos="1" key="125"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="117"/>
+						<datapoint/>
+					</targets>
+					<view ltx="386" lty="86" rbx="499" rby="140"/>
+				</component>
+				<component name="exists" library="core" uid="45" kind="5">
+					<sources>
+						<datapoint pos="0" key="120"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="121"/>
+					</targets>
+					<view ltx="279" lty="86" rbx="355" rby="124"/>
+				</component>
 				<component name="CDA" library="xml" uid="38" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="61" lty="222" rbx="345" rby="781"/>
 					<data>
-						<root scrollposition="1927">
+						<root scrollposition="669">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -659,27 +699,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML" outputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
-					</data>
-				</component>
-				<component name="if-else" library="core" uid="43" kind="4">
-					<sources>
-						<datapoint pos="0" key="113"/>
-						<datapoint pos="1" key="114"/>
-						<datapoint pos="2" key="115"/>
-					</sources>
-					<targets>
-						<datapoint/>
-					</targets>
-					<view ltx="519" lty="346" rbx="623" rby="419"/>
-				</component>
-				<component name="constant" library="core" uid="42" kind="2">
-					<targets>
-						<datapoint pos="0" key="109"/>
-					</targets>
-					<view ltx="387" lty="412" rbx="477" rby="429"/>
-					<data>
-						<constant value="19010101" datatype="string"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml"/>
 					</data>
 				</component>
 				<component name="AAO_NextGen_Patient" library="json" uid="36" kind="31">
@@ -797,6 +817,7 @@
 							<edge vertexkey="16"/>
 							<edge vertexkey="110"/>
 							<edge vertexkey="114"/>
+							<edge vertexkey="120"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="19">
@@ -929,7 +950,7 @@
 							<edge vertexkey="73"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="74">
+					<vertex vertexkey="117">
 						<edges>
 							<edge vertexkey="75"/>
 							<edge vertexkey="78"/>
@@ -1016,6 +1037,16 @@
 					<vertex vertexkey="112">
 						<edges>
 							<edge vertexkey="113"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="74">
+						<edges>
+							<edge vertexkey="123"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="121">
+						<edges>
+							<edge vertexkey="125"/>
 						</edges>
 					</vertex>
 				</vertices>

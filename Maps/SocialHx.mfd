@@ -539,15 +539,6 @@
 					</targets>
 					<view ltx="893" rbx="997" rby="73"/>
 				</component>
-				<component name="constant" library="core" uid="53" kind="2">
-					<targets>
-						<datapoint pos="0" key="63"/>
-					</targets>
-					<view ltx="286" lty="175" rbx="368" rby="192"/>
-					<data>
-						<constant value="72166-2" datatype="string"/>
-					</data>
-				</component>
 				<component name="observation" library="core" uid="43" kind="3">
 					<sources>
 						<datapoint pos="0" key="56"/>
@@ -558,16 +549,6 @@
 						<datapoint/>
 					</targets>
 					<view ltx="697" lty="205" rbx="810" rby="259"/>
-				</component>
-				<component name="equal" library="core" uid="42" kind="5">
-					<sources>
-						<datapoint pos="0" key="64"/>
-						<datapoint pos="1" key="62"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="121"/>
-					</targets>
-					<view ltx="468" lty="175" rbx="524" rby="229"/>
 				</component>
 				<component name="logical-and" library="core" uid="21" kind="5" growable="1" growablebasename="value">
 					<sources>
@@ -597,11 +578,58 @@
 						<constant value="2.16.840.1.113883.10.20.22.4.78" datatype="string"/>
 					</data>
 				</component>
+				<component name="constant" library="core" uid="30" kind="2">
+					<targets>
+						<datapoint pos="0" key="89"/>
+					</targets>
+					<view ltx="949" lty="562" rbx="997" rby="579"/>
+					<data>
+						<constant value="0" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="26" kind="2">
+					<targets>
+						<datapoint pos="0" key="29"/>
+					</targets>
+					<view ltx="912" lty="341" rbx="997" rby="358"/>
+					<data>
+						<constant value="SocialHx" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="54" kind="2">
+					<targets>
+						<datapoint pos="0" key="106"/>
+					</targets>
+					<view ltx="588" lty="531" rbx="703" rby="548"/>
+					<data>
+						<constant value="-TobaccoCode" datatype="string"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="31" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="95"/>
+						<datapoint pos="1" key="107"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="112"/>
+					</targets>
+					<view ltx="716" lty="492" rbx="798" rby="548"/>
+				</component>
+				<component name="concat" library="core" uid="60" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="151"/>
+						<datapoint pos="1" key="152"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="153"/>
+					</targets>
+					<view ltx="697" lty="341" rbx="779" rby="397"/>
+				</component>
 				<component name="CDA" library="xml" uid="51" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="148" lty="245" rbx="432" rby="804"/>
 					<data>
-						<root scrollposition="3584">
+						<root scrollposition="3686">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -715,7 +743,7 @@
 																	<entry name="root" type="attribute" outkey="34"/>
 																</entry>
 																<entry name="id" ns="1" expanded="1">
-																	<entry name="root" type="attribute" outkey="158"/>
+																	<entry name="extension" type="attribute" outkey="160"/>
 																</entry>
 																<entry name="code" ns="1" expanded="1">
 																	<entry name="code" type="attribute" outkey="61"/>
@@ -810,55 +838,27 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_347270373_29998947_01082026_214220.XML" outputinstance="..\Data\HIE_CCDA_1611606_347270373_29998947_01082026_214220.XML"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml"/>
 					</data>
 				</component>
-				<component name="concat" library="core" uid="60" kind="5" growable="1" growablebasename="value">
+				<component name="constant" library="core" uid="53" kind="2">
+					<targets>
+						<datapoint pos="0" key="63"/>
+					</targets>
+					<view ltx="286" lty="175" rbx="368" rby="192"/>
+					<data>
+						<constant value="72166-2" datatype="string"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="42" kind="5">
 					<sources>
-						<datapoint pos="0" key="151"/>
-						<datapoint pos="1" key="152"/>
+						<datapoint pos="0" key="64"/>
+						<datapoint pos="1" key="62"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="153"/>
+						<datapoint pos="0" key="121"/>
 					</targets>
-					<view ltx="697" lty="341" rbx="779" rby="397"/>
-				</component>
-				<component name="constant" library="core" uid="30" kind="2">
-					<targets>
-						<datapoint pos="0" key="89"/>
-					</targets>
-					<view ltx="949" lty="562" rbx="997" rby="579"/>
-					<data>
-						<constant value="0" datatype="string"/>
-					</data>
-				</component>
-				<component name="constant" library="core" uid="26" kind="2">
-					<targets>
-						<datapoint pos="0" key="29"/>
-					</targets>
-					<view ltx="912" lty="341" rbx="997" rby="358"/>
-					<data>
-						<constant value="SocialHx" datatype="string"/>
-					</data>
-				</component>
-				<component name="concat" library="core" uid="31" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="95"/>
-						<datapoint pos="1" key="107"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="112"/>
-					</targets>
-					<view ltx="716" lty="492" rbx="798" rby="548"/>
-				</component>
-				<component name="constant" library="core" uid="54" kind="2">
-					<targets>
-						<datapoint pos="0" key="106"/>
-					</targets>
-					<view ltx="588" lty="531" rbx="703" rby="548"/>
-					<data>
-						<constant value="-TobaccoCode" datatype="string"/>
-					</data>
+					<view ltx="468" lty="175" rbx="524" rby="229"/>
 				</component>
 				<component name="AAO_NextGen_SocialHx" library="json" uid="49" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
@@ -1171,7 +1171,7 @@
 							<edge vertexkey="92"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="158">
+					<vertex vertexkey="160">
 						<edges>
 							<edge vertexkey="95"/>
 							<edge vertexkey="151"/>

@@ -119,15 +119,6 @@
 						<constant value="Provider" datatype="string"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="14" kind="2">
-					<targets>
-						<datapoint pos="0" key="33"/>
-					</targets>
-					<view ltx="1012" lty="128" rbx="1140" rby="145"/>
-					<data>
-						<constant value="messagegroupid" datatype="string"/>
-					</data>
-				</component>
 				<component name="equal" library="core" uid="15" kind="5">
 					<sources>
 						<datapoint pos="0" key="61"/>
@@ -225,16 +216,6 @@
 					<data>
 						<constant value="0" datatype="string"/>
 					</data>
-				</component>
-				<component name="first-items" library="core" uid="31" kind="5">
-					<sources>
-						<datapoint pos="0" key="70"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="71"/>
-					</targets>
-					<view ltx="680" lty="347" rbx="795" rby="401"/>
 				</component>
 				<component name="Meta" library="json" uid="16" kind="31">
 					<properties XSLTTargetEncoding="UTF-8"/>
@@ -473,11 +454,40 @@
 					</targets>
 					<view ltx="1039" lty="605" rbx="1143" rby="678"/>
 				</component>
+				<component name="first-items" library="core" uid="44" kind="5">
+					<sources>
+						<datapoint pos="0" key="109"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="110"/>
+					</targets>
+					<view ltx="542" lty="286" rbx="657" rby="340"/>
+				</component>
+				<component name="first-items" library="core" uid="45" kind="5">
+					<sources>
+						<datapoint pos="0" key="112"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="113"/>
+					</targets>
+					<view ltx="540" lty="353" rbx="655" rby="407"/>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<targets>
+						<datapoint pos="0" key="33"/>
+					</targets>
+					<view ltx="1015" lty="128" rbx="1143" rby="145"/>
+					<data>
+						<constant value="messagegroupid" datatype="string"/>
+					</data>
+				</component>
 				<component name="CDA" library="xml" uid="27" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="101" lty="254" rbx="401" rby="754"/>
 					<data>
-						<root scrollposition="1195">
+						<root scrollposition="3693">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -488,20 +498,33 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="ClinicalDocument" ns="1" expanded="1">
-										<entry name="componentOf" ns="1" expanded="1">
-											<entry name="encompassingEncounter" ns="1" expanded="1">
-												<entry name="responsibleParty" ns="1" expanded="1">
-													<entry name="assignedEntity" ns="1" outkey="86" expanded="1">
+										<entry name="documentationOf" ns="1" expanded="1">
+											<entry name="serviceEvent" ns="1" expanded="1">
+												<entry name="performer" ns="1" expanded="1">
+													<entry name="assignedEntity" ns="1" outkey="114" expanded="1">
 														<entry name="id" ns="1" expanded="1">
-															<entry name="extension" type="attribute" outkey="87"/>
-														</entry>
-														<entry name="code" ns="1" expanded="1">
-															<entry name="code" type="attribute" outkey="88"/>
+															<entry name="extension" type="attribute" outkey="111"/>
 														</entry>
 														<entry name="assignedPerson" ns="1" expanded="1">
 															<entry name="name" ns="1" expanded="1">
-																<entry name="family" ns="1" outkey="89" expanded="1"/>
-																<entry name="given" ns="1" outkey="90" expanded="1"/>
+																<entry name="family" ns="1" outkey="115" expanded="1"/>
+																<entry name="given" ns="1" outkey="116" expanded="1"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="componentOf" ns="1" expanded="1">
+											<entry name="encompassingEncounter" ns="1" expanded="1">
+												<entry name="responsibleParty" ns="1" expanded="1">
+													<entry name="assignedEntity" ns="1" expanded="1">
+														<entry name="id" ns="1" expanded="1"/>
+														<entry name="code" ns="1" expanded="1"/>
+														<entry name="assignedPerson" ns="1" expanded="1">
+															<entry name="name" ns="1" expanded="1">
+																<entry name="family" ns="1" expanded="1"/>
+																<entry name="given" ns="1" expanded="1"/>
 															</entry>
 														</entry>
 													</entry>
@@ -512,7 +535,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML" outputinstance="..\Data\HIE_CCDA_1611606_233152553_30059263_01122026_151134.XML"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\10001 - Kuznia, Douglas A_2026-03-02 18_21_57_000.xml" outputinstance="..\Data\10001 - Kuznia, Douglas A_2026-03-02 18_21_57_000.xml"/>
 					</data>
 				</component>
 				<component name="exists" library="core" uid="34" kind="5">
@@ -556,9 +579,7 @@
 													<entry name="NPI" type="json-property" expanded="1">
 														<entry name="string" inpkey="76"/>
 													</entry>
-													<entry name="ProviderTaxonomyID" type="json-property" expanded="1">
-														<entry name="string" inpkey="77"/>
-													</entry>
+													<entry name="ProviderTaxonomyID" type="json-property" expanded="1"/>
 													<entry name="StatusID" type="json-property" expanded="1">
 														<entry name="string" inpkey="78"/>
 													</entry>
@@ -714,37 +735,26 @@
 							<edge vertexkey="67"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="90">
-						<edges>
-							<edge vertexkey="70"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="85">
 						<edges>
 							<edge vertexkey="72"/>
 							<edge vertexkey="82"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="87">
+					<vertex vertexkey="110">
 						<edges>
 							<edge vertexkey="73"/>
 							<edge vertexkey="76"/>
-							<edge vertexkey="80"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="71">
+					<vertex vertexkey="113">
 						<edges>
 							<edge vertexkey="74"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="89">
+					<vertex vertexkey="115">
 						<edges>
 							<edge vertexkey="75"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="88">
-						<edges>
-							<edge vertexkey="77"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="68">
@@ -757,7 +767,13 @@
 							<edge vertexkey="79"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="86">
+					<vertex vertexkey="111">
+						<edges>
+							<edge vertexkey="80"/>
+							<edge vertexkey="109"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="114">
 						<edges>
 							<edge vertexkey="83"/>
 						</edges>
@@ -806,6 +822,11 @@
 					<vertex vertexkey="103">
 						<edges>
 							<edge vertexkey="108"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="116">
+						<edges>
+							<edge vertexkey="112"/>
 						</edges>
 					</vertex>
 				</vertices>
