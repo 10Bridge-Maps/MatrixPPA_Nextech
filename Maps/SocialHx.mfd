@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Edited with Altova MapForce 2023r2 -->
+<!-- Edited with Altova MapForce 2025r2 -->
 <mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="26">
 	<resources/>
 	<component name="defaultmap" uid="1" editable="1" blackbox="0">
@@ -179,16 +179,6 @@
 						<constant value="messagegroupid" datatype="string"/>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="20" kind="5">
-					<sources>
-						<datapoint pos="0" key="84"/>
-						<datapoint pos="1" key="35"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="71"/>
-					</targets>
-					<view ltx="468" lty="101" rbx="524" rby="155"/>
-				</component>
 				<component name="constant" library="core" uid="22" kind="2">
 					<targets>
 						<datapoint pos="0" key="32"/>
@@ -253,17 +243,6 @@
 						</root>
 						<json schema="..\..\..\10Bridge\Schemas\Meta.schema.json" inputinstance="..\..\Schemas\Meta2.json" outputinstance="..\..\Schemas\Meta2.json"/>
 					</data>
-				</component>
-				<component name="observation" library="core" uid="28" kind="3">
-					<sources>
-						<datapoint pos="0" key="58"/>
-						<datapoint pos="1" key="86"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="99"/>
-						<datapoint/>
-					</targets>
-					<view ltx="697" lty="125" rbx="810" rby="179"/>
 				</component>
 				<component name="value-map" library="core" uid="29" kind="23">
 					<sources>
@@ -539,27 +518,6 @@
 					</targets>
 					<view ltx="893" rbx="997" rby="73"/>
 				</component>
-				<component name="observation" library="core" uid="43" kind="3">
-					<sources>
-						<datapoint pos="0" key="56"/>
-						<datapoint pos="1" key="125"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="103"/>
-						<datapoint/>
-					</targets>
-					<view ltx="697" lty="205" rbx="810" rby="259"/>
-				</component>
-				<component name="logical-and" library="core" uid="21" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="72"/>
-						<datapoint pos="1" key="122"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="85"/>
-					</targets>
-					<view ltx="561" lty="125" rbx="646" rby="181"/>
-				</component>
 				<component name="constant" library="core" uid="57" kind="2">
 					<targets>
 						<datapoint pos="0" key="154"/>
@@ -615,21 +573,179 @@
 					</targets>
 					<view ltx="716" lty="492" rbx="798" rby="548"/>
 				</component>
-				<component name="concat" library="core" uid="60" kind="5" growable="1" growablebasename="value">
+				<component name="logical-and" library="core" uid="21" kind="5" growable="1" growablebasename="value">
 					<sources>
-						<datapoint pos="0" key="151"/>
-						<datapoint pos="1" key="152"/>
+						<datapoint pos="0" key="72"/>
+						<datapoint pos="1" key="122"/>
+						<datapoint pos="2" key="164"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="153"/>
+						<datapoint pos="0" key="85"/>
 					</targets>
-					<view ltx="697" lty="341" rbx="779" rby="397"/>
+					<view ltx="561" lty="125" rbx="653" rby="198"/>
+				</component>
+				<component name="observation" library="core" uid="28" kind="3">
+					<sources>
+						<datapoint pos="0" key="58"/>
+						<datapoint pos="1" key="86"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="99"/>
+						<datapoint/>
+					</targets>
+					<view ltx="697" lty="125" rbx="810" rby="179"/>
+				</component>
+				<component name="constant" library="core" uid="53" kind="2">
+					<targets>
+						<datapoint pos="0" key="63"/>
+					</targets>
+					<view ltx="286" lty="175" rbx="368" rby="192"/>
+					<data>
+						<constant value="72166-2" datatype="string"/>
+					</data>
+				</component>
+				<component name="observation" library="core" uid="43" kind="3">
+					<sources>
+						<datapoint pos="0" key="56"/>
+						<datapoint pos="1" key="125"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="103"/>
+						<datapoint/>
+					</targets>
+					<view ltx="697" lty="205" rbx="810" rby="259"/>
+				</component>
+				<component name="logical-and" library="core" uid="61" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="161"/>
+						<datapoint pos="1" key="163"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="162"/>
+					</targets>
+					<view ltx="561" lty="245" rbx="646" rby="301"/>
+				</component>
+				<component name="AAO_NextGen_SocialHx" library="json" uid="49" kind="31">
+					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
+					<view ltx="1026" lty="191" rbx="1293" rby="684"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" outkey="42" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="root" expanded="1">
+										<entry name="array" expanded="1">
+											<entry name="item" type="json-item" expanded="1">
+												<entry name="object" inpkey="105" expanded="1">
+													<entry name="OrganizationEMRExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="9"/>
+													</entry>
+													<entry name="PatientExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="17"/>
+													</entry>
+													<entry name="ExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="126"/>
+													</entry>
+													<entry name="ExternalSource" type="json-property" expanded="1">
+														<entry name="string" inpkey="30"/>
+													</entry>
+													<entry name="Name" type="json-property" expanded="1">
+														<entry name="string" inpkey="127"/>
+													</entry>
+													<entry name="Value" type="json-property" expanded="1"/>
+													<entry name="CodeSystemID" type="json-property" expanded="1">
+														<entry name="string" inpkey="120"/>
+													</entry>
+													<entry name="Code" type="json-property" expanded="1">
+														<entry name="string" inpkey="68"/>
+													</entry>
+													<entry name="Quantity" type="json-property" expanded="1"/>
+													<entry name="Frequency" type="json-property" expanded="1"/>
+													<entry name="RecordedDate" type="json-property" expanded="1">
+														<entry name="string" inpkey="88"/>
+													</entry>
+													<entry name="StartDate" type="json-property" expanded="1"/>
+													<entry name="EndDate" type="json-property" expanded="1"/>
+													<entry name="IsDeleted" type="json-property" expanded="1">
+														<entry name="string" inpkey="93"/>
+													</entry>
+												</entry>
+												<entry name="object" inpkey="118" expanded="1" clone="1">
+													<entry name="OrganizationEMRExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="2"/>
+													</entry>
+													<entry name="PatientExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="28"/>
+													</entry>
+													<entry name="ExternalID" type="json-property" expanded="1">
+														<entry name="string" inpkey="113"/>
+													</entry>
+													<entry name="ExternalSource" type="json-property" expanded="1">
+														<entry name="string" inpkey="31"/>
+													</entry>
+													<entry name="Name" type="json-property" expanded="1">
+														<entry name="string" inpkey="102"/>
+													</entry>
+													<entry name="Value" type="json-property" expanded="1">
+														<entry name="string" inpkey="117"/>
+													</entry>
+													<entry name="CodeSystemID" type="json-property" expanded="1">
+														<entry name="string" inpkey="92"/>
+													</entry>
+													<entry name="Code" type="json-property" expanded="1">
+														<entry name="string" inpkey="115"/>
+													</entry>
+													<entry name="Quantity" type="json-property" expanded="1"/>
+													<entry name="Frequency" type="json-property" expanded="1"/>
+													<entry name="RecordedDate" type="json-property" expanded="1">
+														<entry name="string" inpkey="98"/>
+													</entry>
+													<entry name="StartDate" type="json-property" expanded="1"/>
+													<entry name="EndDate" type="json-property" expanded="1"/>
+													<entry name="IsDeleted" type="json-property" expanded="1">
+														<entry name="string" inpkey="90"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<parameter usageKind="stringserialize"/>
+						<json schema="..\..\Schemas\SocialHx.schema.json" inputinstance="..\Data\ENTAndAllergyAssociates_SocialHx.json" outputinstance="..\Data\ENTAndAllergyAssociates_SocialHx.json"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="20" kind="5">
+					<sources>
+						<datapoint pos="0" key="84"/>
+						<datapoint pos="1" key="35"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="71"/>
+					</targets>
+					<view ltx="468" lty="101" rbx="524" rby="155"/>
+				</component>
+				<component name="equal" library="core" uid="42" kind="5">
+					<sources>
+						<datapoint pos="0" key="64"/>
+						<datapoint pos="1" key="62"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="121"/>
+					</targets>
+					<view ltx="468" lty="175" rbx="524" rby="229"/>
 				</component>
 				<component name="CDA" library="xml" uid="51" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="148" lty="245" rbx="432" rby="804"/>
 					<data>
-						<root scrollposition="3686">
+						<root scrollposition="3391">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -838,123 +954,27 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\617 - Oster, David W_2026-03-04 20_05_42_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\..\..\..\..\Users\CraigCarriger\EdmunLiuBulkPatients\SummaryOfCare\30673 - Cheifetz, Brooke_2026-03-02 20_28_35_000.xml" outputinstance="..\Data\617 - Oster, David W_2026-03-02 19_45_35_000.xml"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="53" kind="2">
-					<targets>
-						<datapoint pos="0" key="63"/>
-					</targets>
-					<view ltx="286" lty="175" rbx="368" rby="192"/>
-					<data>
-						<constant value="72166-2" datatype="string"/>
-					</data>
-				</component>
-				<component name="equal" library="core" uid="42" kind="5">
+				<component name="concat" library="core" uid="60" kind="5" growable="1" growablebasename="value">
 					<sources>
-						<datapoint pos="0" key="64"/>
-						<datapoint pos="1" key="62"/>
+						<datapoint pos="0" key="151"/>
+						<datapoint pos="1" key="152"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="121"/>
+						<datapoint pos="0" key="153"/>
 					</targets>
-					<view ltx="468" lty="175" rbx="524" rby="229"/>
+					<view ltx="697" lty="341" rbx="779" rby="397"/>
 				</component>
-				<component name="AAO_NextGen_SocialHx" library="json" uid="49" kind="31">
-					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
-					<view ltx="1026" lty="191" rbx="1293" rby="684"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" outkey="42" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="root" expanded="1">
-										<entry name="array" expanded="1">
-											<entry name="item" type="json-item" expanded="1">
-												<entry name="object" inpkey="105" expanded="1">
-													<entry name="OrganizationEMRExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="9"/>
-													</entry>
-													<entry name="PatientExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="17"/>
-													</entry>
-													<entry name="ExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="126"/>
-													</entry>
-													<entry name="ExternalSource" type="json-property" expanded="1">
-														<entry name="string" inpkey="30"/>
-													</entry>
-													<entry name="Name" type="json-property" expanded="1">
-														<entry name="string" inpkey="127"/>
-													</entry>
-													<entry name="Value" type="json-property" expanded="1"/>
-													<entry name="CodeSystemID" type="json-property" expanded="1">
-														<entry name="string" inpkey="120"/>
-													</entry>
-													<entry name="Code" type="json-property" expanded="1">
-														<entry name="string" inpkey="68"/>
-													</entry>
-													<entry name="Quantity" type="json-property" expanded="1"/>
-													<entry name="Frequency" type="json-property" expanded="1"/>
-													<entry name="RecordedDate" type="json-property" expanded="1">
-														<entry name="string" inpkey="88"/>
-													</entry>
-													<entry name="StartDate" type="json-property" expanded="1"/>
-													<entry name="EndDate" type="json-property" expanded="1"/>
-													<entry name="IsDeleted" type="json-property" expanded="1">
-														<entry name="string" inpkey="93"/>
-													</entry>
-												</entry>
-												<entry name="object" inpkey="118" expanded="1" clone="1">
-													<entry name="OrganizationEMRExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="2"/>
-													</entry>
-													<entry name="PatientExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="28"/>
-													</entry>
-													<entry name="ExternalID" type="json-property" expanded="1">
-														<entry name="string" inpkey="113"/>
-													</entry>
-													<entry name="ExternalSource" type="json-property" expanded="1">
-														<entry name="string" inpkey="31"/>
-													</entry>
-													<entry name="Name" type="json-property" expanded="1">
-														<entry name="string" inpkey="102"/>
-													</entry>
-													<entry name="Value" type="json-property" expanded="1">
-														<entry name="string" inpkey="117"/>
-													</entry>
-													<entry name="CodeSystemID" type="json-property" expanded="1">
-														<entry name="string" inpkey="92"/>
-													</entry>
-													<entry name="Code" type="json-property" expanded="1">
-														<entry name="string" inpkey="115"/>
-													</entry>
-													<entry name="Quantity" type="json-property" expanded="1"/>
-													<entry name="Frequency" type="json-property" expanded="1"/>
-													<entry name="RecordedDate" type="json-property" expanded="1">
-														<entry name="string" inpkey="98"/>
-													</entry>
-													<entry name="StartDate" type="json-property" expanded="1"/>
-													<entry name="EndDate" type="json-property" expanded="1"/>
-													<entry name="IsDeleted" type="json-property" expanded="1">
-														<entry name="string" inpkey="90"/>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<parameter usageKind="stringserialize"/>
-						<json schema="..\..\Schemas\SocialHx.schema.json" inputinstance="..\Data\ENTAndAllergyAssociates_SocialHx.json" outputinstance="..\Data\ENTAndAllergyAssociates_SocialHx.json"/>
-					</data>
+				<component name="exists" library="core" uid="63" kind="5">
+					<sources>
+						<datapoint pos="0" key="165"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="166"/>
+					</targets>
+					<view ltx="513" lty="320" rbx="589" rby="358"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -1233,7 +1253,7 @@
 					<vertex vertexkey="121">
 						<edges>
 							<edge vertexkey="122"/>
-							<edge vertexkey="125"/>
+							<edge vertexkey="161"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="123">
@@ -1241,9 +1261,15 @@
 							<edge vertexkey="124"/>
 						</edges>
 					</vertex>
+					<vertex vertexkey="162">
+						<edges>
+							<edge vertexkey="125"/>
+						</edges>
+					</vertex>
 					<vertex vertexkey="153">
 						<edges>
 							<edge vertexkey="126"/>
+							<edge vertexkey="165"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="128">
@@ -1290,6 +1316,12 @@
 					<vertex vertexkey="154">
 						<edges>
 							<edge vertexkey="152"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="166">
+						<edges>
+							<edge vertexkey="163"/>
+							<edge vertexkey="164"/>
 						</edges>
 					</vertex>
 				</vertices>
