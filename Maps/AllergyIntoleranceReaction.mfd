@@ -121,15 +121,6 @@
 						<constant value="AllergyIntoleranceReaction" datatype="string"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="14" kind="2">
-					<targets>
-						<datapoint pos="0" key="88"/>
-					</targets>
-					<view ltx="955" lty="84" rbx="1083" rby="101"/>
-					<data>
-						<constant value="messagegroupid" datatype="string"/>
-					</data>
-				</component>
 				<component name="equal" library="core" uid="15" kind="5">
 					<sources>
 						<datapoint pos="0" key="16"/>
@@ -261,108 +252,6 @@
 					</targets>
 					<view ltx="648" lty="172" rbx="773" rby="226"/>
 				</component>
-				<component name="AllergyIntoleranceReaction" library="json" uid="29" kind="31">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="1114" lty="217" rbx="1353" rby="657"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="root" expanded="1">
-										<entry name="object" expanded="1">
-											<entry name="Actions" type="json-property" expanded="1">
-												<entry name="array" expanded="1">
-													<entry name="item" type="json-item" expanded="1">
-														<entry name="object" expanded="1">
-															<entry name="JobID" type="json-property" expanded="1"/>
-															<entry name="StepID" type="json-property" expanded="1">
-																<entry name="string" inpkey="129"/>
-															</entry>
-															<entry name="Step" type="json-property" expanded="1">
-																<entry name="string" inpkey="136"/>
-															</entry>
-															<entry name="Authentication" type="json-property" expanded="1"/>
-															<entry name="StepType" type="json-property" expanded="1"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="Payloads" type="json-property" expanded="1">
-												<entry name="array" expanded="1">
-													<entry name="item" type="json-item" expanded="1">
-														<entry name="object" expanded="1">
-															<entry name="Payload" type="json-property" expanded="1">
-																<entry name="string" inpkey="102"/>
-															</entry>
-														</entry>
-														<entry name="object" expanded="1" clone="1">
-															<entry name="Payload" type="json-property" expanded="1">
-																<entry name="string" inpkey="91"/>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="Indexes" type="json-property" expanded="1">
-												<entry name="array" expanded="1">
-													<entry name="item" type="json-item" expanded="1">
-														<entry name="object" expanded="1">
-															<entry name="IndexName" type="json-property" expanded="1">
-																<entry name="string" inpkey="89"/>
-															</entry>
-															<entry name="IndexValue" type="json-property" expanded="1">
-																<entry name="string" inpkey="10"/>
-															</entry>
-														</entry>
-														<entry name="object" expanded="1" clone="1">
-															<entry name="IndexName" type="json-property" expanded="1">
-																<entry name="string" inpkey="4"/>
-															</entry>
-															<entry name="IndexValue" type="json-property" expanded="1">
-																<entry name="string" inpkey="68"/>
-															</entry>
-														</entry>
-														<entry name="object" expanded="1" clone="1">
-															<entry name="IndexName" type="json-property" expanded="1">
-																<entry name="string" inpkey="79"/>
-															</entry>
-															<entry name="IndexValue" type="json-property" expanded="1">
-																<entry name="string" inpkey="94"/>
-															</entry>
-														</entry>
-														<entry name="object" expanded="1" clone="1">
-															<entry name="IndexName" type="json-property" expanded="1">
-																<entry name="string" inpkey="6"/>
-															</entry>
-															<entry name="IndexValue" type="json-property" expanded="1">
-																<entry name="string" inpkey="14"/>
-															</entry>
-														</entry>
-														<entry name="object" expanded="1" clone="1">
-															<entry name="IndexName" type="json-property" expanded="1">
-																<entry name="string" inpkey="25"/>
-															</entry>
-															<entry name="IndexValue" type="json-property" expanded="1">
-																<entry name="string" inpkey="114"/>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<json schema="..\..\..\10Bridge\Schemas\MapToInflator.schema.json" inputinstance="..\..\..\10Bridge\Schemas\MapToInflator.schema.json" outputinstance="..\..\..\10Bridge\Schemas\MapToInflator.schema.json"/>
-					</data>
-				</component>
 				<component name="if-else" library="core" uid="30" kind="4">
 					<sources>
 						<datapoint pos="0" key="132"/>
@@ -489,15 +378,6 @@
 						<constant value="AllergyIntoleranceReaction" datatype="string"/>
 					</data>
 				</component>
-				<component name="exists" library="core" uid="41" kind="5">
-					<sources>
-						<datapoint pos="0" key="120"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="115"/>
-					</targets>
-					<view ltx="512" lty="660" rbx="588" rby="698"/>
-				</component>
 				<component name="value-map" library="core" uid="43" kind="23">
 					<sources>
 						<datapoint pos="0" key="60"/>
@@ -573,16 +453,6 @@
 						<constant value="2.16.840.1.113883.10.20.22.4.7" datatype="string"/>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="49" kind="5">
-					<sources>
-						<datapoint pos="0" key="31"/>
-						<datapoint pos="1" key="67"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="48"/>
-					</targets>
-					<view ltx="405" lty="100" rbx="461" rby="154"/>
-				</component>
 				<component name="equal" library="core" uid="52" kind="5">
 					<sources>
 						<datapoint pos="0" key="47"/>
@@ -623,6 +493,129 @@
 					</targets>
 					<view ltx="440" lty="319" rbx="516" rby="357"/>
 				</component>
+				<component name="observation" library="core" uid="33" kind="3">
+					<sources>
+						<datapoint pos="0" key="27"/>
+						<datapoint pos="1" key="29"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="82"/>
+						<datapoint/>
+					</targets>
+					<view ltx="504" lty="194" rbx="617" rby="248"/>
+				</component>
+				<component name="AllergyIntoleranceReaction" library="json" uid="29" kind="31">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1114" lty="217" rbx="1353" rby="657"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="root" expanded="1">
+										<entry name="object" expanded="1">
+											<entry name="Actions" type="json-property" expanded="1">
+												<entry name="array" expanded="1">
+													<entry name="item" type="json-item" expanded="1">
+														<entry name="object" expanded="1">
+															<entry name="JobID" type="json-property" expanded="1"/>
+															<entry name="StepID" type="json-property" expanded="1">
+																<entry name="string" inpkey="129"/>
+															</entry>
+															<entry name="Step" type="json-property" expanded="1">
+																<entry name="string" inpkey="136"/>
+															</entry>
+															<entry name="Authentication" type="json-property" expanded="1"/>
+															<entry name="StepType" type="json-property" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="Payloads" type="json-property" expanded="1">
+												<entry name="array" expanded="1">
+													<entry name="item" type="json-item" expanded="1">
+														<entry name="object" expanded="1">
+															<entry name="Payload" type="json-property" expanded="1">
+																<entry name="string" inpkey="102"/>
+															</entry>
+														</entry>
+														<entry name="object" expanded="1" clone="1">
+															<entry name="Payload" type="json-property" expanded="1">
+																<entry name="string" inpkey="91"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="Indexes" type="json-property" expanded="1">
+												<entry name="array" expanded="1">
+													<entry name="item" type="json-item" expanded="1">
+														<entry name="object" expanded="1">
+															<entry name="IndexName" type="json-property" expanded="1">
+																<entry name="string" inpkey="89"/>
+															</entry>
+															<entry name="IndexValue" type="json-property" expanded="1">
+																<entry name="string" inpkey="10"/>
+															</entry>
+														</entry>
+														<entry name="object" expanded="1" clone="1">
+															<entry name="IndexName" type="json-property" expanded="1">
+																<entry name="string" inpkey="4"/>
+															</entry>
+															<entry name="IndexValue" type="json-property" expanded="1">
+																<entry name="string" inpkey="68"/>
+															</entry>
+														</entry>
+														<entry name="object" expanded="1" clone="1">
+															<entry name="IndexName" type="json-property" expanded="1">
+																<entry name="string" inpkey="79"/>
+															</entry>
+															<entry name="IndexValue" type="json-property" expanded="1">
+																<entry name="string" inpkey="94"/>
+															</entry>
+														</entry>
+														<entry name="object" expanded="1" clone="1">
+															<entry name="IndexName" type="json-property" expanded="1">
+																<entry name="string" inpkey="6"/>
+															</entry>
+															<entry name="IndexValue" type="json-property" expanded="1">
+																<entry name="string" inpkey="14"/>
+															</entry>
+														</entry>
+														<entry name="object" expanded="1" clone="1">
+															<entry name="IndexName" type="json-property" expanded="1">
+																<entry name="string" inpkey="25"/>
+															</entry>
+															<entry name="IndexValue" type="json-property" expanded="1">
+																<entry name="string" inpkey="114"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<json schema="..\..\..\10Bridge\Schemas\MapToInflator.schema.json" inputinstance="..\..\..\10Bridge\Schemas\MapToInflator.schema.json" outputinstance="..\..\..\10Bridge\Schemas\MapToInflator.schema.json"/>
+					</data>
+				</component>
+				<component name="item-at" library="core" uid="46" kind="5">
+					<sources>
+						<datapoint pos="0" key="41"/>
+						<datapoint pos="1" key="70"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="84"/>
+					</targets>
+					<view ltx="519" lty="430" rbx="629" rby="484"/>
+				</component>
 				<component name="distinct-values" library="core" uid="47" kind="5">
 					<sources>
 						<datapoint pos="0" key="85"/>
@@ -632,11 +625,32 @@
 					</targets>
 					<view ltx="649" lty="402" rbx="750" rby="440"/>
 				</component>
+				<component name="equal" library="core" uid="49" kind="5">
+					<sources>
+						<datapoint pos="0" key="31"/>
+						<datapoint pos="1" key="67"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="48"/>
+					</targets>
+					<view ltx="405" lty="100" rbx="461" rby="154"/>
+				</component>
+				<component name="if-else" library="core" uid="45" kind="4">
+					<sources>
+						<datapoint pos="0" key="148"/>
+						<datapoint pos="1" key="139"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="40"/>
+					</targets>
+					<view ltx="614" lty="655" rbx="718" rby="728"/>
+				</component>
 				<component name="CDA" library="xml" uid="58" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0" EnableMinMaxOccursOptimizations="0"/>
 					<view ltx="85" lty="217" rbx="369" rby="776"/>
 					<data>
-						<root scrollposition="7645">
+						<root scrollposition="5350">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -697,7 +711,9 @@
 																		<entry name="templateId" ns="1" expanded="1">
 																			<entry name="root" type="attribute" outkey="66"/>
 																		</entry>
-																		<entry name="id" ns="1" expanded="1"/>
+																		<entry name="id" ns="1" expanded="1">
+																			<entry name="extension" type="attribute" outkey="201"/>
+																		</entry>
 																		<entry name="text" ns="1">
 																			<entry name="reference" ns="1" expanded="1"/>
 																		</entry>
@@ -796,59 +812,17 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\403 - DiGiovanni, Linda_2026-03-04 20_05_34_000.xml" outputinstance="..\Data\403 - DiGiovanni, Linda_2026-03-04 20_05_34_000.xml"/>
+						<document schema="..\..\Schemas\cda\infrastructure\cda\CDA.xsd" instanceroot="{urn:hl7-org:v3}ClinicalDocument" inputinstance="..\Data\0_original_AdvancedSpecialityAssociates_e1c0419c631b489fae20a2d64a2471c2.xml" outputinstance="..\Data\0_original_AdvancedSpecialityAssociates_e1c0419c631b489fae20a2d64a2471c2.xml"/>
 					</data>
 				</component>
-				<component name="if-else" library="core" uid="45" kind="4">
+				<component name="exists" library="core" uid="41" kind="5">
 					<sources>
-						<datapoint pos="0" key="148"/>
-						<datapoint pos="1" key="139"/>
-						<datapoint/>
+						<datapoint pos="0" key="120"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="40"/>
+						<datapoint pos="0" key="115"/>
 					</targets>
-					<view ltx="614" lty="655" rbx="718" rby="728"/>
-				</component>
-				<component name="item-at" library="core" uid="46" kind="5">
-					<sources>
-						<datapoint pos="0" key="41"/>
-						<datapoint pos="1" key="70"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="84"/>
-					</targets>
-					<view ltx="519" lty="430" rbx="629" rby="484"/>
-				</component>
-				<component name="exception" library="core" uid="65" kind="18">
-					<sources>
-						<datapoint pos="0" key="190"/>
-						<datapoint pos="1" key="192"/>
-					</sources>
-					<view ltx="1396" lty="105" rbx="1474" rby="159"/>
-					<data>
-						<exception name="error"/>
-					</data>
-				</component>
-				<component name="observation" library="core" uid="33" kind="3">
-					<sources>
-						<datapoint pos="0" key="27"/>
-						<datapoint pos="1" key="29"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="82"/>
-						<datapoint/>
-					</targets>
-					<view ltx="504" lty="194" rbx="617" rby="248"/>
-				</component>
-				<component name="constant" library="core" uid="66" kind="2">
-					<targets>
-						<datapoint pos="0" key="191"/>
-					</targets>
-					<view ltx="1203" lty="99" rbx="1357" rby="116"/>
-					<data>
-						<constant value="Data found for AllergyIntoleranceReaction - fix map" datatype="string"/>
-					</data>
+					<view ltx="512" lty="660" rbx="588" rby="698"/>
 				</component>
 				<component name="AAO_NextGen_AllergyIntoleranceReaction" library="json" uid="59" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" PrettyPrint="0"/>
@@ -916,6 +890,15 @@
 						</root>
 						<parameter usageKind="stringserialize"/>
 						<json schema="..\..\Schemas\AllergyIntoleranceReaction.schema.json" inputinstance="..\Data\ENTAndAllergyAssociates_AllergyIntoleranceReaction.json" outputinstance="..\Data\ENTAndAllergyAssociates_AllergyIntoleranceReaction.json"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<targets>
+						<datapoint pos="0" key="88"/>
+					</targets>
+					<view ltx="959" lty="84" rbx="1087" rby="101"/>
+					<data>
+						<constant value="messagegroupid" datatype="string"/>
 					</data>
 				</component>
 			</children>
@@ -1047,8 +1030,6 @@
 					<vertex vertexkey="193">
 						<edges>
 							<edge vertexkey="53"/>
-							<edge vertexkey="120"/>
-							<edge vertexkey="139"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="54">
@@ -1119,7 +1100,6 @@
 						<edges>
 							<edge vertexkey="83"/>
 							<edge vertexkey="95"/>
-							<edge vertexkey="190"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="84">
@@ -1182,6 +1162,12 @@
 					<vertex vertexkey="111">
 						<edges>
 							<edge vertexkey="112"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="201">
+						<edges>
+							<edge vertexkey="120"/>
+							<edge vertexkey="139"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="124">
@@ -1258,11 +1244,6 @@
 					<vertex vertexkey="187">
 						<edges>
 							<edge vertexkey="188"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="191">
-						<edges>
-							<edge vertexkey="192"/>
 						</edges>
 					</vertex>
 				</vertices>
