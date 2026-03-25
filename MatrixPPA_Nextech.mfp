@@ -7,6 +7,7 @@
 		<File Type="Mapping" FilePath="Maps\Conditions.mfd"/>
 		<File Type="Mapping" FilePath="Maps\Encounter.mfd"/>
 		<File Type="Mapping" FilePath="Maps\EncounterCondition.mfd"/>
+		<File Type="Mapping" FilePath="Maps\EncounterConditionsEncDiagnosis.mfd"/>
 		<File Type="Mapping" FilePath="Maps\EncounterPayor.mfd"/>
 		<File Type="Mapping" FilePath="Maps\EncounterProcedure.mfd"/>
 		<File Type="Mapping" FilePath="Maps\FamilyHx.mfd"/>
